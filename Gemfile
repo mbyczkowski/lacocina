@@ -15,6 +15,8 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 # Use Foundation for building the UI
 gem 'foundation-rails'
+# Use HAML for building HTML templates
+gem 'haml'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
