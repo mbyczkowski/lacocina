@@ -1,32 +1,25 @@
 %header
   .row
-    Logo
-    Donate
-  %nav.top-bar{'data-topbar' => true, role: 'navigation'}
-    %ul.title-area
-      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-      %li.toggle-topbar.menu-icon
+    %nav.top-bar{'data-topbar' => true, role: 'navigation'}
+      .top-bar-title
         = link_to '#' do
-          %span Menu
-    %section.top-bar-section
-      <!-- Right Nav Section -->
-      %ul.right
-
-      <!-- Left Nav Section -->
-      %ul.left
-        %li
-          = link_to 'Home', '#'
-        %li
-          = link_to 'About Us', '#'
-        %li
-          = link_to 'Ways To Help', '#'
-        %li
-          = link_to 'Events', '#'
-        %li
-          = link_to 'For Entrepreneurs', '#'
-        %li
-          = link_to 'Our Businesses', '#'
-        %li
-          = link_to 'Catering', '#'
-        %li
-          = link_to 'Store', '#'
+          = image_tag 'logo.png'
+      .top-bar-left
+        %ul.menu
+          %li
+            = link_to 'About Us', '#'
+          %li
+            = link_to 'Get Involved', '#'
+          %li
+            = link_to 'Events', '#'
+          %li
+            = link_to 'Start A Business', '#'
+          %li
+            = link_to 'Cater With Us', '#'
+          %li
+            = link_to 'Store', '#'
+      .top-bar-right
+        %ul.menu
+          %li
+            %button.button
+              Donate
