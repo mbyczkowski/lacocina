@@ -5,15 +5,36 @@
         = link_to '#' do
           = image_tag 'logo.png'
       .top-bar-left
-        %ul.menu
+        %ul.dropdown.menu{'data-dropdown-menu': true}
           %li
             = link_to 'About Us', '#'
+            %ul.menu.vertical
+              %li
+                = link_to 'Mission', '#'
+              %li
+                = link_to 'People', '#'
+              %li
+                = link_to 'Press', '#'
           %li
             = link_to 'Get Involved', '#'
+            %ul.menu.vertical
+              %li
+                = link_to 'Get Involved', '#'
+              %li
+                = link_to 'Donate', '#'
+              %li
+                = link_to 'Volunteer', '#'
+              %li
+                = link_to 'Other Ways', '#'
           %li
             = link_to 'Events', '#'
           %li
             = link_to 'Start A Business', '#'
+            %ul.menu.vertical
+              %li
+                = link_to 'Learn More & Apply', '#'
+              %li
+                = link_to 'Resources For Business Owners', '#'
           %li
             = link_to 'Cater With Us', '#'
           %li

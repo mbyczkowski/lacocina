@@ -39,3 +39,17 @@
     %h2 Find La Cocina businesses around you!
     %iframe{src: "https://maps.google.com/maps/ms?msa=0&amp;msid=208632012759605526147.0004acde070f01b1e090c&amp;hl=en&amp;ie=UTF8&amp;t=m&amp;vpsrc=0&amp;ll=37.7718,-122.422886&amp;spn=0.027138,0.034161&amp;z=13&amp;output=embed", frameborder: "0", marginwidth: "0", marginheight: "0", scrolling: "no", width: "200", height: "200"}
     = link_to 'View business on the map', '#', class: 'expanded button'
+
+.row
+  .large-8.columns
+    %h2 Stay Connected
+    .social-media-links
+      %span facebook
+      %span twitter
+      %span instagram
+      %span youtube
+  .large-4.columns
+    %h2 Our Newsletter
+    %p stay informed - sign in with your email address below to receive updates about La Cocina
+
+= render partial: 'businesses'
