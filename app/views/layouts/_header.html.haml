@@ -2,7 +2,7 @@
   .row
     %nav.top-bar{'data-topbar' => true, role: 'navigation'}
       .top-bar-title
-        = link_to '#' do
+        = link_to root_path do
           = image_tag 'logo.png'
       .top-bar-left
         %ul.dropdown.menu{'data-dropdown-menu': true}
@@ -19,7 +19,7 @@
             = link_to 'Get Involved', '#'
             %ul.menu.vertical
               %li
-                = link_to 'Get Involved', '#'
+                = link_to 'Get Involved', '/get_involved'
               %li
                 = link_to 'Donate', '#'
               %li
