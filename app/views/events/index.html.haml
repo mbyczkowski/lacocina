@@ -1,0 +1,21 @@
+.row
+  %h1 Upcoming Events
+
+  %h3
+    Join La Cocina for our annual artisan culinary classes. La Cocina offers hands-on cooking classes in
+    fun environment where you will have the opportunity to learn from some of the best cooks in the
+    city in an environment that can’t beat. All proceeds from these classes go to support La Cocina’s
+    mission of providing affordable commercial kitchen space and technical assistance to low income
+    entrepreneurs launching food business.
+  %hr
+
+- @events.each do |event|
+  .row
+    .large-2.columns
+      = image_tag 'thumbnail_placeholder.png', class: 'thumbnail'
+    .large-10.columns
+      %h2= event.title
+      - event.body.split("\n").each do |p|
+        %p= p
+      = link_to 'Get Tickets >', '#', class: 'button'
+      = link_to 'Visit Event Page >', '#', class: 'button'
