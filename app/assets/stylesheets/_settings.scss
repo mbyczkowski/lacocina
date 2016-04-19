@@ -49,7 +49,6 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  //primary: #2199e8,
   primary: #65003D,
   secondary: #777,
   success: #3adb76,
@@ -353,7 +352,7 @@ $input-border: 1px solid $medium-gray;
 $input-border-focus: 1px solid $dark-gray;
 $input-shadow: inset 0 1px 2px rgba($black, 0.1);
 $input-shadow-focus: 0 0 5px $medium-gray;
-$input-cursor-disabled: default;
+$input-cursor-disabled: not-allowed;
 $input-transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
 $input-number-spinners: true;
 $input-radius: $global-radius;

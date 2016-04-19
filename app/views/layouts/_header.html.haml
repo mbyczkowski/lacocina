@@ -1,23 +1,26 @@
 %header
-  .row
-    %nav.top-bar{'data-topbar' => true, role: 'navigation'}
-      .top-bar-title
+  .row.heading
+    .title-bar{'data-responsive-toggle': 'top-menu', 'data-hide-for': 'medium'}
+      %button.menu-icon{'type': 'button', 'data-toggle': true}
+      .title-bar-title Menu
+    %nav#top-menu.top-bar{'data-topbar': true, role: 'navigation'}
+      .top-bar-title.logo-size.show-for-large
         = link_to root_path do
           = image_tag 'logo.png'
       .top-bar-left
-        %ul.dropdown.menu{'data-dropdown-menu': true}
-          %li
+        %ul.dropdown.vertical.medium-horizontal.menu{'data-responsive-menu': 'drilldown medium-dropdown', 'data-responsive-toggle': true}
+          %li.has-submenu
             = link_to 'About Us', '#'
-            %ul.menu.vertical
+            %ul.menu.submenu.vertical{'data-submenu': true}
               %li
                 = link_to 'Mission', '/mission'
               %li
                 = link_to 'People', '/people'
               %li
                 = link_to 'Press', '/press'
-          %li
-            = link_to 'Get Involved', '/get_involved'
-            %ul.menu.vertical
+          %li.has-submenu
+            = link_to 'Get Involved', '#'
+            %ul.menu.submenu.vertical
               %li
                 = link_to 'Donate', '#'
               %li
@@ -26,9 +29,9 @@
                 = link_to 'Other Ways', '/other_ways_to_help'
           %li
             = link_to 'Events', events_path
-          %li
+          %li.has-submenu
             = link_to 'Start A Business', '#'
-            %ul.menu.vertical
+            %ul.menu.submenu.vertical
               %li
                 = link_to 'Learn More & Apply', '#'
               %li
