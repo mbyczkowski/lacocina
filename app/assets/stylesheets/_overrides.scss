@@ -1,51 +1,21 @@
 @import 'settings';
+
 .button {
   text-transform: uppercase;
+  font-weight: 900;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
+
+.row {
+  margin-top: 20px;
 }
 
 .menu a {
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: 0.5px;
-  font-size: 0.8em;
-}
-.logo-size {
-  height: 65px;
-  width: 169px;
-}
-h2 {
-  color: #65003D;
-  font-size: 20px;
-  font-weight: 900;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-}
-h5{
-  font-size: 30px;
-}
-p {
-  color: #749397;
-}
-.hollow.button {
-  font-weight: 900;
-}
-.bold{
-  font-weight: 900;
-}
-.col-align-center{
-  text-align: center;
-}
-h2.spacing-para {
-  margin-bottom: 2px;
-}
-.large-4.columns.col-align-center img {
-  width: 100px;
-  height: 100px;
-  margin: 10px 0;
-}
-.orange {
-  color: #CB511E;
-}
-.purple {
-  color:  #65003D;
+  font-size: 1em;
 }

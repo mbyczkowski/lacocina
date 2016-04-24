@@ -1,20 +1,20 @@
 .row
   = image_tag 'home_banner_1_placeholder.png'
 
-.row
-  .large-4.columns.col-align-center
+.row.call-to-action-boxes
+  .medium-4.columns.text-center
     = image_tag 'event.png'
-    %h2.spacing-para La Cocina Events
+    %h4 La Cocina Events
     %p Eat, laugh and learn something new
     = link_to 'See our events', events_path, class: 'button'
-  .large-4.columns.col-align-center
+  .medium-4.columns.text-center
     = image_tag 'involved.png'
-    %h2.spacing-para Get Involved
+    %h4 Get Involved
     %p Be part of the movement
     = link_to 'Get Involved', '/get_involved', class: 'button'
-  .large-4.columns.col-align-center
+  .medium-4.columns.text-center
     = image_tag 'gift.png'
-    %h2.spacing-para La Cocina Gift Boxes
+    %h4 La Cocina Gift Boxes
     %p Make a difference
     = link_to 'Buy a gift box', 'http://lacocinastore.mybigcommerce.com/gift-box', class: 'button'
 
@@ -22,23 +22,29 @@
   = image_tag 'home_banner_2_placeholder.png'
 
 .row
-  .large-8.columns.col-align-center
+  .large-8.columns.stats
     .large-6.columns
-      %h5.orange.bold 36
-      %h5.orange business owners
+      %h1.primary
+        36
+        %small.primary business owners
       %hr
-      %h5.purple.bold 95%
-      %h5.purple of La Cocina business owners are women
+      %h1.secondary
+        95%
+      %h4
+        %small.secondary of La Cocina business owners are women
     .large-6.columns
-      %h5.orange.bold 19
-      %h5.orange immigrants
+      %h1.secondary
+        19
+        %small.secondary immigrants
       %hr
-      %h5.purple.bold +150,000
-      %h5.purple hours of kitchen rental
+      %h1.primary
+        +150,000
+      %h4
+        %small.primary hours of kitchen rental
     .large-12.columns
       = link_to 'Help Us Continue Our Mission', '#', class: 'expanded hollow button'
-  .large-4.columns
-    %h2 Find La Cocina businesses around you!
+  .large-4.columns.map
+    %h6 Find La Cocina businesses around you!
     / %iframe{src: "https://maps.google.com/maps/ms?msa=0&amp;msid=208632012759605526147.0004acde070f01b1e090c&amp;hl=en&amp;ie=UTF8&amp;t=m&amp;vpsrc=0&amp;ll=37.7718,-122.422886&amp;spn=0.027138,0.034161&amp;z=13&amp;output=embed", frameborder: "0", marginwidth: "0", marginheight: "0", scrolling: "no", width: "200", height: "200"}
     = link_to 'View business on the map', '#', class: 'expanded button'
 

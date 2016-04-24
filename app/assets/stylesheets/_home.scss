@@ -1,0 +1,28 @@
+@import 'settings';
+
+.call-to-action-boxes img {
+  width: 100px;
+  height: 100px;
+  margin: 10px 0;
+}
+
+.map h6 {
+  color: map-get($foundation-palette, secondary);
+}
+
+.stats {
+  text-align: center;
+
+  small {
+    text-transform: lowercase;
+    font-weight: normal;
+  }
+
+  .primary {
+    color: map-get($foundation-palette, primary);
+  }
+
+  .secondary {
+    color: map-get($foundation-palette, secondary);
+  }
+}
