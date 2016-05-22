@@ -1,5 +1,6 @@
 .row
   %h2 Our Businesses
-  - businesses.each do |b|
-    .large-1.columns
-      = image_tag 'business_placeholder_logo.png'
+  - businesses.each_with_index do |b, i|
+    - klass = i == businesses.length - 1 ? 'end' : ''
+    .large-1.columns.end{class: klass}
+      = image_tag b[:logo]
