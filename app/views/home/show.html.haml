@@ -46,7 +46,29 @@
         = link_to 'Help Us Continue Our Mission', '#', class: 'expanded hollow button'
     .large-4.columns.map
       %h6 Find La Cocina businesses around you!
-      / %iframe{src: "https://maps.google.com/maps/ms?msa=0&amp;msid=208632012759605526147.0004acde070f01b1e090c&amp;hl=en&amp;ie=UTF8&amp;t=m&amp;vpsrc=0&amp;ll=37.7718,-122.422886&amp;spn=0.027138,0.034161&amp;z=13&amp;output=embed", frameborder: "0", marginwidth: "0", marginheight: "0", scrolling: "no", width: "200", height: "200"}
+      #gmap_canvas{:style => "height:300px;width:100%;"}
+      :javascript
+        function initMap() {
+          var myOptions = { zoom: 12,
+                            center: new google.maps.LatLng(37.7749295,-122.41941550000001),
+                            mapTypeId: google.maps.MapTypeId.ROADMAP,
+                            mapTypeControl: false,
+                            streetViewControl: false
+                          };
+          var businesses = #{businesses_with_locations.to_json}
+          var map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+          for (var i = 0; i < businesses.length; i++) {
+            for (var j = 0; j < businesses[i].coordinates.length; j++) {
+              var marker = new google.maps.Marker({map: map, position: new google.maps.LatLng(businesses[i].coordinates[j][0], businesses[i].coordinates[j][1])});
+              var popup = "<strong>"+businesses[i].name+"</strong><br>"+businesses[i].address
+              var infowindow = new google.maps.InfoWindow({content: popup});
+              google.maps.event.addListener(marker, 'click', function() {
+                infowindow.open(map, marker);
+              });
+            }
+          }
+        }
+      %script{src: "https://maps.googleapis.com/maps/api/js?key=#{ENV['GOOGLE_API_KEY']}&callback=initMap", async: true, defer: true}
       = link_to 'View business on the map', '#', class: 'expanded button'
 
 - if work_in_progress?
