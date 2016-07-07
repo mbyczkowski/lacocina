@@ -14,7 +14,7 @@ class PagesController < ApplicationController
   private
 
   def finished_pages
-    %w(mission catering volunteer)
+    %w(mission catering volunteer donate)
   end
 
   def page
