@@ -45,30 +45,31 @@
       = link_to 'Learn more about La Cocina', '/mission', class: 'expanded hollow button'
   .large-4.columns.map
     %h6 Find La Cocina businesses around you!
-    #gmap_canvas{:style => "height:300px;width:100%;"}
-    :javascript
-      function initMap() {
-        var myOptions = { zoom: 12,
-                          center: new google.maps.LatLng(37.7749295,-122.41941550000001),
-                          mapTypeId: google.maps.MapTypeId.ROADMAP,
-                          mapTypeControl: false,
-                          streetViewControl: false
-                        };
-        var businesses = #{businesses_with_locations.to_json}
-        var map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-        for (var i = 0; i < businesses.length; i++) {
-          for (var j = 0; j < businesses[i].coordinates.length; j++) {
-            var marker = new google.maps.Marker({map: map, position: new google.maps.LatLng(businesses[i].coordinates[j][0], businesses[i].coordinates[j][1])});
-            var popup = "<strong>"+businesses[i].name+"</strong><br>"+businesses[i].address
-            var infowindow = new google.maps.InfoWindow({content: popup});
-            google.maps.event.addListener(marker, 'click', function() {
-              infowindow.open(map, marker);
-            });
-          }
-        }
-      }
-    %script{src: "https://maps.googleapis.com/maps/api/js?key=#{ENV['GOOGLE_API_KEY']}&callback=initMap", async: true, defer: true}
-    = link_to 'View business on the map', '/volunteer', class: 'expanded button'
+    %iframe{src: "https://www.google.com/maps/d/embed?mid=1OcGetCOiKBlGyYudjmBuRQSnOC0", style: "height:300px;width:100%;"}
+    // #gmap_canvas{:style => "height:300px;width:100%;"}
+    //:javascript
+    //  function initMap() {
+    //    var myOptions = { zoom: 12,
+    //                      center: new google.maps.LatLng(37.7749295,-122.41941550000001),
+    //                      mapTypeId: google.maps.MapTypeId.ROADMAP,
+    //                      mapTypeControl: false,
+    //                      streetViewControl: false
+    //                    };
+    //    var businesses = #{businesses_with_locations.to_json}
+    //    var map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+    //    for (var i = 0; i < businesses.length; i++) {
+    //      for (var j = 0; j < businesses[i].coordinates.length; j++) {
+    //        var marker = new google.maps.Marker({map: map, position: new google.maps.LatLng(businesses[i].coordinates[j][0], businesses[i].coordinates[j][1])});
+    //        var popup = "<strong>"+businesses[i].name+"</strong><br>"+businesses[i].address
+    //        var infowindow = new google.maps.InfoWindow({content: popup});
+    //        google.maps.event.addListener(marker, 'click', function() {
+    //          infowindow.open(map, marker);
+    //        });
+    //      }
+    //    }
+    //  }
+    //%script{src: "https://maps.googleapis.com/maps/api/js?key=#{ENV['GOOGLE_API_KEY']}&callback=initMap", async: true, defer: true}
+    // = link_to 'View business on the map', '/volunteer', class: 'expanded button'
 
 .row
   .large-8.columns
