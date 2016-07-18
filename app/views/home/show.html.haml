@@ -23,25 +23,23 @@
 
 .row
   .large-8.columns.stats
-    .large-6.columns
-      %h1.primary
-        36
-        %small.primary business owners
-      %hr
-      %h1.secondary
-        95%
-      %h4
-        %small.secondary of La Cocina business owners are women
-    .large-6.columns
-      %h1.secondary
-        19
-        %small.secondary immigrants
-      %hr
-      %h1.primary
-        +150,000
-      %h4
-        %small.primary hours of kitchen rental
-    .large-12.columns
+    .row
+      .large-6.columns
+        %h1.secondary 94%
+        %h3.secondary of La Cocina business owners are women
+      .large-6.columns
+        %h1.primary 91%
+        %h3.primary people of color
+    .row
+      .large-6.columns
+        %hr
+        %h1.primary 70%
+        %h3.primary parents
+      .large-6.columns
+        %hr
+        %h1.secondary 60%
+        %h3.secondary immigrants
+    .row
       = link_to 'Learn more about La Cocina', '/mission', class: 'expanded hollow button'
   .large-4.columns.map
     %h6 Find La Cocina businesses around you!
