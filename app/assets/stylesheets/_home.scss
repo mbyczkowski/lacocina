@@ -17,14 +17,14 @@
     text-transform: none;
     font-weight: normal;
   }
+}
 
-  .primary {
-    color: map-get($foundation-palette, primary);
-  }
+.primary {
+  color: map-get($foundation-palette, primary);
+}
 
-  .secondary {
-    color: map-get($foundation-palette, secondary);
-  }
+.secondary {
+  color: map-get($foundation-palette, secondary);
 }
 
 .social-media-links h3 {

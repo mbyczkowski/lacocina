@@ -1,6 +1,6 @@
 .row
-  %h2 Our Businesses
+  %h6.secondary Our Businesses
   - businesses.each_with_index do |b, i|
     - klass = i == businesses.length - 1 ? 'end' : ''
-    .large-1.columns.end{class: klass}
+    .large-2.columns.end{class: klass}
       = image_tag b[:logo]
