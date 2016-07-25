@@ -30,3 +30,48 @@
 .social-media-links h3 {
   display: inline
 }
+
+.image {
+  position: relative;
+  width: 100%;
+
+  .caption {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+  }
+}
+
+.caption {
+  h1 {
+    font-size: 48px;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 0.9;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  h1.subheader {
+    font-size: 36px;
+    font-weight: normal;
+    text-transform: none;
+    text-shadow: none;
+  }
+
+  .button {
+    margin-top: 15px;
+    min-width: 284px;
+  }
+}
+
+.dark-background.button {
+  color: #fff;
+  border-color: #fff;
+  &:hover {
+    color: $copper;
+    border-color: $copper;
+  }
+}

@@ -1,5 +1,10 @@
 .row
-  = image_tag 'home_banner_1_placeholder.png'
+  .image
+    = image_tag 'home_banner_1.png'
+    .caption
+      %h1 La Cocina
+      %h1.subheader Cultivating food entrepreneurs
+      = link_to 'Donate', '/donate', class: 'hollow dark-background button'
 
 .row.call-to-action-boxes
   .medium-4.columns.text-center

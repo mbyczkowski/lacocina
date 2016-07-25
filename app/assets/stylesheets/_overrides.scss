@@ -15,9 +15,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu a {
   text-transform: uppercase;
-  font-weight: 900;
-  letter-spacing: 0.5px;
+  font-weight: normal;
+  letter-spacing: 1px;
   font-size: 1em;
+  &.button {
+    font-weight: 900;
+  }
 }
 
 .accordion-title {
