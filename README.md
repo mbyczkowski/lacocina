@@ -12,6 +12,10 @@
 - make sure that your PostgreSQL server is running, and then run `bundle exec rake db:setup`
 - if you got no errors then run `bundle exec rails server` and visit http://localhost:3000 in your browser
 
+### Using Vagrant
+- run 'vagrant up'
+- visit http://localhost:3000 in your browser
+
 #### Troubleshooting
 
 ##### 1. Cannot create a db with `bundle exec rake db:setup`

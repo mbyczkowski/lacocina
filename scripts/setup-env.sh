@@ -1,0 +1,3 @@
+#!/bin/bash
+export DATABASE_URL="postgres://lacocina:lacocina@127.0.0.1:5432/lacocina_development"
+export SECRET_KEY_BASE="bb9a4d5fdffb007c5312f84d80e863740be2bd4c1b261492fabd26eb0c2357b3c169e05a8c864da9872bc1b339052272968ca3975fe64cc9104b6013b8571233"

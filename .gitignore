@@ -18,3 +18,5 @@
 .DS_Store
 .env
 .sass-cache
+.vagrant
+lacocina-app.log
