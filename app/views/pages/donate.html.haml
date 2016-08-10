@@ -4,7 +4,7 @@
     padding-bottom: 56.25%;
     overflow: hidden;
     max-width: 100%;
-    height: 100%;
+    height: 325px;
   }
   .embed-container iframe, .embed-container object, .embed-container embed {
     position: absolute;
@@ -14,8 +14,15 @@
     height: 100%;
   }
 
-.row{'data-equalizer': "donation-iframe"}
-  .large-8.columns{'data-equalizer-watch': "donation-iframe"}
+.row
+  .large-8.columns
+    = image_tag 'home_banner_1.png'
+  .large-4.columns
+    .embed-container
+      %iframe{src: "https://connect.clickandpledge.com/w/Organization/lacocinasf/paymentwidget/06e3dbaf-d3f9-4dde-96ce-1feec8319d2a", frameborder: "0", allowfullscreen: true}
+
+.row
+  .large-12.columns
     %h1 Be part of defining what La Cocina can mean
     .row
       %p The mission of La Cocina is to cultivate low-income food entrepreneurs as they formalize and grow their businesses by providing affordable commercial kitchen space, industry-specific technical assistance and access to market opportunities. We focus primarily on women from communities of color and immigrant communities. Our vision is that entrepreneurs will become economically self-sufficient and contribute to a vibrant economy doing what they love to do.
@@ -43,6 +50,3 @@
 
       %p Every dollar counts. For every $1 you donate, the businesses generate $3 of revenue for the local economy plus an average of 2 jobs per business. Imagine what your donation of $50, $75, or $100 will mean to aspiring entrepreneurs, their families, and our community.
 
-  .large-4.columns{'data-equalizer-watch': "donation-iframe"}
-    .embed-container
-      %iframe{src: "https://connect.clickandpledge.com/w/Organization/lacocinasf/paymentwidget/06e3dbaf-d3f9-4dde-96ce-1feec8319d2a", frameborder: "0", allowfullscreen: true}
