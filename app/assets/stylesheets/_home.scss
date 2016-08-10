@@ -47,7 +47,7 @@
 
 .caption {
   h1 {
-    font-size: 48px;
+    font-size: 4rem;
     color: #fff;
     letter-spacing: 1px;
     line-height: 0.9;
@@ -55,15 +55,30 @@
   }
 
   h1.subheader {
-    font-size: 36px;
+    font-size: 3rem;
     font-weight: normal;
     text-transform: none;
     text-shadow: none;
   }
 
   .button {
-    margin-top: 15px;
+    margin-top: 1rem;
     min-width: 284px;
+  }
+
+  @include breakpoint(small only) {
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    h1.subheader {
+      font-size: 1rem;
+    }
+
+    .button {
+      margin-top: 0.5rem;
+      min-width: 142px;
+    }
   }
 }
 

@@ -12,3 +12,9 @@
     margin-top: 20px;
   }
 }
+
+header .heading {
+  @include breakpoint(small only) {
+    margin-top: 0;
+  }
+}
