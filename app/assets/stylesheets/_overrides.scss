@@ -26,3 +26,22 @@ h1, h2, h3, h4, h5, h6 {
 .accordion-title {
   font-size: 1.5em;
 }
+
+.copper {
+    color: $copper;
+}
+
+.col-5 {
+    div {
+        &.large-2 {
+            @include breakpoint(large up) {
+                margin-left: 33px;
+            }
+        }
+    }
+}
+
+.icon-box {
+    height: 105px;
+    text-align: center;
+}

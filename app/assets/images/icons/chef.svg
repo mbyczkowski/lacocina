@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="101px" height="100px" viewBox="0 0 101 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Donate" transform="translate(-87.000000, -821.000000)" stroke="#33494C" stroke-width="3.75">
+            <g id="Page-1" transform="translate(89.000000, 823.000000)">
+                <path d="M17,86 L17,90.0011998 C17,93.3155369 19.6200989,96 22.8549695,96 L72.1450305,96 C75.3769737,96 78,93.3155369 78,90.0011998 L78,86" id="Stroke-1"></path>
+                <path d="M78.0909229,86 L78.0909229,69.8748168 L78.0909229,64.4978011 L78.0909229,56.4381413 C88.5340847,56.4381413 97,48.014932 97,37.6244503 C97,27.2339686 88.5340847,18.8107592 78.0909229,18.8107592 C73.3437633,18.8107592 69.0179841,20.5640064 65.6999818,23.4372209 C66.0771614,21.953704 66.2981651,20.4115501 66.2981651,18.8107592 C66.2981651,8.4202775 57.8322498,0 47.3920348,0 C36.948873,0 28.4829577,8.4202775 28.4829577,18.8107592 C28.4829577,19.7460198 28.5743059,20.6578257 28.7069081,21.5579041 C25.8456468,19.8281117 22.501124,18.8107592 18.9090771,18.8107592 C8.4659153,18.8107592 0,27.2339686 0,37.6244503 C0,47.2673099 7.2931223,55.2038319 16.6901999,56.2974125 L16.6901999,64.4978011 L16.6901999,69.8748168 L16.6901999,86" id="Stroke-3"></path>
+                <path d="M17,86 L78,86" id="Stroke-5"></path>
+                <path d="M26,92 L26,95" id="Stroke-7"></path>
+                <path d="M34,92 L34,95" id="Stroke-9"></path>
+                <path d="M42,92 L42,95" id="Stroke-11"></path>
+                <path d="M50,92 L50,95" id="Stroke-13"></path>
+                <path d="M59,92 L59,95" id="Stroke-15"></path>
+                <path d="M67,92 L67,95" id="Stroke-17"></path>
+            </g>
+        </g>
+    </g>
+</svg>
