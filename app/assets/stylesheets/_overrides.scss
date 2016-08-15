@@ -32,16 +32,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .col-5 {
-    div {
-        &.large-2 {
-            @include breakpoint(large up) {
-                margin-left: 33px;
-            }
-        }
+  div {
+    &.large-2 {
+      @include breakpoint(large up) {
+        margin-left: 33px;
+      }
     }
+  }
 }
 
 .icon-box {
-    height: 105px;
-    text-align: center;
+  height: 105px;
+  text-align: center;
+}
+
+.vertically-centered {
+  display: flex;
+  align-items: center;
+}
+
+.subtext {
+  margin-top: -10px;
+}
+
+.right-border {
+  border-right: 1px solid map-get($foundation-palette, primary);
 }
