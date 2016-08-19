@@ -1,0 +1,34 @@
+footer {
+  background-color: #628185;
+
+  a {
+  	color: #ffffff;
+  }
+
+  .footer {
+    padding-left: 1.313rem;
+  }
+
+  .sitemap {
+	font-family: Raleway;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 0.8;
+	color: #ffffff;
+	margin-top: 1.063rem;
+  }
+
+  .copyright {
+	font-family: Raleway;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 0.8;
+	color: #ffffff;
+	margin-bottom: 1.2rem;
+	margin-top: 5.125rem;
+
+	p {
+	  margin-bottom: .125rem;
+	}
+  }
+}
