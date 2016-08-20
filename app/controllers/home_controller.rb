@@ -1,9 +1,9 @@
 class HomeController < ApplicationController
-    
+
     helper_method :businesses, :businesses_with_locations
-    
+
     private
-    
+
     def businesses
         @businesses ||= [
         {
@@ -60,7 +60,7 @@ class HomeController < ApplicationController
         #      },
         {
             name: "El Buen Comer",
-            logo: "el_buen_comer_logo_low_res.png",
+            logo: "el_buen_comer.png",
             info: "Basic Info"
         },
         {
@@ -170,7 +170,7 @@ class HomeController < ApplicationController
         #      }
         ]
     end
-    
+
     def businesses_with_locations
         businesses.select{ |b| b[:coordinates].present? }
     end

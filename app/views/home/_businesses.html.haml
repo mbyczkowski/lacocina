@@ -1,6 +1,6 @@
-.row
+.row.businesses.clearfix
   %h6.secondary Our Businesses
   - businesses.each_with_index do |b, i|
     - klass = i == businesses.length - 1 ? 'end' : ''
-    .large-3.columns.end{class: klass}
-      = image_tag b[:logo], :title => b[:info]
+    .float-left{class: klass}
+      = image_tag "businesses/#{b[:logo]}", :title => b[:info]
