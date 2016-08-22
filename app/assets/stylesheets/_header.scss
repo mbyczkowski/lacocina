@@ -1,3 +1,5 @@
+@import 'settings';
+
 .heading header {
   margin-top: 20px;
 }
@@ -16,5 +18,31 @@
 header .heading {
   @include breakpoint(small only) {
     margin-top: 0;
+  }
+}
+
+.mobile-bar {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  background: white;
+  border-bottom: 1px solid map-get($foundation-palette, primary);
+  z-index: 100;
+
+  .menu-icon {
+    position: absolute;
+    margin-top: 1.1rem;
+    margin-left: 0.8rem;
+    &::after {
+      background: map-get($foundation-palette, primary);
+      box-shadow: 0 7px 0 map-get($foundation-palette, primary), 0 14px 0 map-get($foundation-palette, primary);
+    }
+  }
+  .mobile-bar-title {
+    width: 100%;
+    text-align: center;
+    img {
+      height: 42px;
+    }
   }
 }

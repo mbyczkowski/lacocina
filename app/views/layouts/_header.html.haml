@@ -1,46 +1,28 @@
 %header
   .row.heading
-    .title-bar{'data-responsive-toggle': 'top-menu', 'data-hide-for': 'medium'}
-      %button.menu-icon{'type': 'button', 'data-toggle': true}
-      .title-bar-title Menu
-    %nav#top-menu.top-bar{'data-topbar': true, role: 'navigation'}
-      .top-bar-title.logo-size.show-for-large
-        = link_to root_path do
-          = image_tag 'logo.png'
-      .top-bar-left
-        %ul.dropdown.vertical.medium-horizontal.menu{'data-responsive-menu': 'drilldown medium-dropdown', 'data-responsive-toggle': true}
-          %li.has-submenu
-            = link_to 'About Us', '#'
-            %ul.menu.submenu.vertical{'data-submenu': true}
-              %li
-                = link_to 'Mission', '/mission'
-              %li
-                = link_to 'People', '/people'
-              %li
-                = link_to 'Press', '/press'
-          %li.has-submenu
-            = link_to 'Get Involved', '#'
-            %ul.menu.submenu.vertical
-              %li
-                = link_to 'Donate', '/donate'
-              %li
-                = link_to 'Volunteer', '/volunteer'
-              %li
-                = link_to 'Other Ways', '/other_ways_to_help'
-          %li
-            = link_to 'Events', events_path
-          %li.has-submenu
-            = link_to 'Start A Business', '#'
-            %ul.menu.submenu.vertical
-              %li
-                = link_to 'Learn More & Apply', '/coming_soon'
-              %li
-                = link_to 'Resources For Business Owners', '/coming_soon'
-          %li
-            = link_to 'Cater With Us', '/catering'
-          %li
-            = link_to 'Shop', 'http://lacocinastore.mybigcommerce.com'
-      .top-bar-right
-        %ul.menu
-          %li
-            = link_to 'Donate', '/donate', class: 'button'
+    .show-for-small
+      .top-bar.mobile-bar{'data-responsive-toggle': 'offCanvasMenu'}
+        %button.menu-icon{'type': 'button', 'data-toggle': 'offCanvasMenu'}
+        .mobile-bar-title
+          = link_to root_path do
+            = image_tag 'logo.png'
+    .show-for-large
+      %nav#top-menu.top-bar{'data-topbar': true, role: 'navigation'}
+        .top-bar-title.logo-size
+          = link_to root_path do
+            = image_tag 'logo.png'
+        .top-bar-left
+          %ul.dropdown.menu{'data-dropdown-menu': true}
+            - menu_items.each do |menu_item|
+              - klass = menu_item[:submenu] ? 'is-dropdown-submenu-parent' : ''
+              %li{class: klass}
+                = link_to menu_item[:name], menu_item[:url]
+                - if menu_item[:submenu]
+                  %ul.menu.submenu.vertical{'data-submenu': true}
+                    - menu_item[:submenu].each do |submenu_item|
+                      %li
+                        = link_to submenu_item[:name], submenu_item[:url]
+        .top-bar-right
+          %ul.menu
+            %li
+              = link_to 'Donate', '/donate', class: 'button'
