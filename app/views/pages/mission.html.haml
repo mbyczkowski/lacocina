@@ -21,37 +21,81 @@
     %h3.primary for every $1 men make
     %p Doing the same job with the same responsibilities and knowledge.
   .large-4.columns
-    %h1.primary $13 per hour
-    %h3.primary La Cocina average commercial rental rate
+    %h1.secondary $13 per hour
+    %h3.secondary La Cocina average commercial rental rate
     %p $35 per hour, 2014-2015 average commercial kitchen rental rate.
 
 .row.text-center
-  %h2 Breaking barriers
-  %p By providing community resources and an array of industry-specific services, business incubators ensure small businesses can succeed. La Cocina follows this model by providing commercial kitchen space and technical assistance focusing on low-income women and immigrant entrepreneurs who are launching, growing and formalizing food businesses.
+  .large-9.large-centered.columns
+    %h2 Breaking barriers
+    %p By providing community resources and an array of industry-specific services, business incubators ensure small businesses can succeed. La Cocina follows this model by providing commercial kitchen space and technical assistance focusing on low-income women and immigrant entrepreneurs who are launching, growing and formalizing food businesses.
 
-  %p The food industry has a notoriously high cost of entry: the fees for licensed and insured commercial kitchen space, the start-up costs to open a restaurant, the standards set to compete for shelf space at specialty stores and large retailers. Burgeoning food entrepreneurs face an uphill battle for success in an overwhelming and incredibly crowded marketplace. La Cocina provides a platform for these motivated people to hone their skills and successfully transition into the highly regulated and competitive food industry.
-  = link_to 'Donate', '/donate', class: 'button'
+    %p The food industry has a notoriously high cost of entry: the fees for licensed and insured commercial kitchen space, the start-up costs to open a restaurant, the standards set to compete for shelf space at specialty stores and large retailers. Burgeoning food entrepreneurs face an uphill battle for success in an overwhelming and incredibly crowded marketplace. La Cocina provides a platform for these motivated people to hone their skills and successfully transition into the highly regulated and competitive food industry.
+    = link_to 'Donate', '/donate', class: 'button'
 
 .row.text-center
-  %h2 Story of La Cocina
-  %hr
-  %h4
+  .large-9.large-centered.columns
+    %h2 Story of La Cocina
+    %hr
     %small
       La Cocina was born out of a belief that a community of natural entrepreneurs, given the right resources, can create self-sufficient businesses that benefit themselves, their families, their community, and the whole city. The food that has come out of this kitchen since 2005 reflects that aspiration and, quite simply, tastes amazing.
-  %hr
-  %p La Cocina (pronounced la co-see-nah, meaning “The Kitchen” in Spanish) was inspired by its current home, San Francisco’s Mission District. This ethnically diverse and economically vulnerable neighborhood that thrives in part due to the many small informal businesses that serve the community. Food lies at the heart of this community, and you don’t have to look far to find hidden entrepreneurs in the kitchens of many homes.
+    %hr
+    %p La Cocina (pronounced la co-see-nah, meaning “The Kitchen” in Spanish) was inspired by its current home, San Francisco’s Mission District. This ethnically diverse and economically vulnerable neighborhood that thrives in part due to the many small informal businesses that serve the community. Food lies at the heart of this community, and you don’t have to look far to find hidden entrepreneurs in the kitchens of many homes.
 
-  %p Recognizing a need to formalize these food businesses and the opportunity created when you turn inconsistent and illegal home restaurants into sustainable legal businesses, organizations like Arriba Juntos, The Women’s Initiative for Self-Employment and The Women’s Foundation of California and one very special and visionary anonymous donor created La Cocina. La Cocina is both the space-a modern building and commercial kitchen that has been featured in Metropolis Magazine—and the program—an innovative business incubator that supports a growing roster of small businesses.
+    %p Recognizing a need to formalize these food businesses and the opportunity created when you turn inconsistent and illegal home restaurants into sustainable legal businesses, organizations like Arriba Juntos, The Women’s Initiative for Self-Employment and The Women’s Foundation of California and one very special and visionary anonymous donor created La Cocina. La Cocina is both the space-a modern building and commercial kitchen that has been featured in Metropolis Magazine—and the program—an innovative business incubator that supports a growing roster of small businesses.
 
 .row.text-center
-  %h2 The La Cocina Family
-  %p
-    La Cocina is a home for 30 up-and-coming businesses and a growing roster of graduates, representing all aspects of local food. As a result of these businesses and La Cocina’s support, community jobs have been created and thousands have been introduced to the flavors of the world. As a testament to their quality, the businesses of La Cocina sell their products locally, regionally, nationally, and even internationally.
-  = link_to 'View our businesses', '/coming_soon', class: 'button'
+  .large-9.large-centered.columns
+    %h2 The La Cocina Family
+    %p
+      La Cocina is a home for 30 up-and-coming businesses and a growing roster of graduates, representing all aspects of local food. As a result of these businesses and La Cocina’s support, community jobs have been created and thousands have been introduced to the flavors of the world. As a testament to their quality, the businesses of La Cocina sell their products locally, regionally, nationally, and even internationally.
+    = link_to 'View our businesses', '/coming_soon', class: 'button'
 
-- if work_in_progress?
-  .row.text-center
-    %h2 Our Supporters
-    - 16.times.each do
-      .large-1.columns
-        = image_tag 'business_placeholder_logo.png'
+.row.text-center
+  %h2 Our Supporters
+  .large-4.columns
+    %ul
+      %li
+        %a{:href => "https://www.bankofamerica.com/"} Bank of America
+      %li
+        %a{:href => "https://www.capitalone.com/"} Capital One
+      %li
+        %a{:href => "https://www.chevron.com/"} Chevron
+      %li
+        %a{:href => "https://www.jpmorganchase.com/"} JP Morgan Chase
+      %li
+        %a{:href => "http://www.clifbarfamilyfoundation.org/"} Clif Bar Family Foundation
+      %li
+        %a{:href => "http://www.fhlbsf.com/"} Federal Home Loan Bank San Francisco (FHLBSF)
+      %li
+        %a{:href => "http://www.isabelallendefoundation.org/"} Isabel Allende Foundation
+  .large-4.columns
+    %ul
+      %li
+        %a{:href => "http://www.levistrauss.com/levi-strauss-foundation/"} Levi Strauss & Co. Foundation
+      %li
+        %a{:href => "http://www.macysinc.com/community/corporate-gifts/"} Macy's Corporate Giving
+      %li
+        %a{:href => "http://marcled.org/"} Marcled Foundation
+      %li
+        %a{:href => "http://www.adminitrustllc.com/may-and-stanley-smith-charitable-trust/"} May & Stanley Smith Charitable Trust
+      %li
+        %a{:href => "http://sfmohcd.org/community-development"} Mayor's Office of Community Development, San Francisco
+      %li
+        %a{:href => "http://nalcab.org/"} National Association for Latino Community Asset Builders (NALCAB)
+  .large-4.columns
+    %ul
+      %li
+        %a{:href => "http://www.nbfamilyfoundation.org/"} New Belgium Family Foundation
+      %li
+        %a{:href => "http://sff.org/"} San Francisco Foundation
+      %li
+        %a{:href => "#"} The Economic Justice Fund
+      %li
+        %a{:href => "https://www.unionbank.com/global/about/corporate-social-responsibility/foundation/"} Union Bank Foundation
+      %li
+        %a{:href => "http://www.haassr.org/"} Walter & Elise Haas Fund
+      %li
+        %a{:href => "https://www.wellsfargo.com/"} Wells Fargo
+      %li
+        %a{:href => "http://www.yhsodafoundation.org/"} Y&H Soda Foundation
