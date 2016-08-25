@@ -1,0 +1,59 @@
+@import 'settings';
+
+.mission-statement {
+	.large-8.columns {
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 1.5;
+		color: #628185;
+	}
+
+	h2 {
+		color: #cb511e;
+	}
+
+	small {
+		color: #33494c;
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+	p {
+		color: #33494c;
+		font-size: 15px;
+		line-height: 1.6;
+	}
+}
+
+.mission-stats {
+	.large-4.columns {
+		h1 {
+			line-height: 1.1;
+		}
+
+		h3 {
+			font-weight: 100;
+			text-transform: none;
+			line-height: 1.1;
+		}
+	}
+}
+
+.supporters {
+	h2 {
+		color: #cb511e;
+	}
+
+	ul {
+		list-style: none;
+
+		a {
+			color: #4087da;
+			font-weight: bold;
+
+			&:visited {
+				color: #33494c;
+			}
+		}
+	}
+}
