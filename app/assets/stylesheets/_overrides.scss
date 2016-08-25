@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .icon-box {
-  height: 105px;
+  height: 120px;
   text-align: center;
 }
 
@@ -62,7 +62,9 @@ h1, h2, h3, h4, h5, h6 {
 .subheading {
   &.secondary {
     color: $charcoal-gray;
-    line-height: 2.1;
+    line-height: 1.2;
+    font-weight: 900;
+    font-size: 1.125em;
   }
 }
 
