@@ -1,5 +1,4 @@
 .row.businesses.clearfix
-  %h6.secondary Our Businesses
   - businesses.each_with_index do |b, i|
     - klass = i == businesses.length - 1 ? 'end' : ''
     .float-left{class: klass}
