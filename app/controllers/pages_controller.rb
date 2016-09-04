@@ -1,23 +1,24 @@
 class PagesController < ApplicationController
-  def show
-    if work_in_progress?
-      render page
-    else
-      if finished_pages.include?(page)
+
+    def show
+      if work_in_progress?
         render page
       else
-        render 'coming_soon'
+        if finished_pages.include?(page)
+          render page
+        else
+          render 'coming_soon'
+        end
       end
     end
-  end
 
-  private
+    private
 
-  def finished_pages
-    %w(mission catering volunteer donate)
-  end
+    def finished_pages
+      %w(mission catering volunteer donate)
+    end
 
-  def page
-    params[:page]
-  end
+    def page
+      params[:page]
+    end
 end
