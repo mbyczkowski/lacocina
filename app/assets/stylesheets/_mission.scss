@@ -5,21 +5,21 @@
 		font-size: 20px;
 		font-weight: 500;
 		line-height: 1.5;
-		color: #628185;
+		color: $dark-gray;
 	}
 
 	h2 {
-		color: #cb511e;
+		color: $copper;
 	}
 
 	small {
-		color: #33494c;
+		color: $charcoal-gray;
 		font-weight: bold;
 		font-size: 20px;
 	}
 
 	p {
-		color: #33494c;
+		color: $charcoal-gray;
 		font-size: 15px;
 		line-height: 1.6;
 	}
@@ -41,19 +41,18 @@
 
 .supporters {
 	h2 {
-		color: #cb511e;
+		color: $copper;
 	}
-
 	ul {
 		list-style: none;
 
 		a {
-			color: #4087da;
+			color: $dark-sky-blue;
 			font-weight: bold;
 
 			&:visited {
-				color: #33494c;
-			}
+      			color: $dark-sky-blue;
+    		}
 		}
 	}
 }
