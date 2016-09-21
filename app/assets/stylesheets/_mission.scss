@@ -86,6 +86,9 @@
 			&:visited {
       			color: $dark-sky-blue;
     		}
+    		&:hover {
+    			color: $mid-blue;
+			}
 		}
 	}
 }
