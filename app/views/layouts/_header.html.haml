@@ -1,7 +1,7 @@
 %header
   .row.heading
-    .show-for-small
-      .top-bar.mobile-bar{'data-responsive-toggle': 'offCanvasMenu'}
+    .hide-for-large
+      .top-bar.mobile-bar{'data-responsive-toggle': 'offCanvasMenu', 'data-hide-for': 'large'}
         %button.menu-icon{'type': 'button', 'data-toggle': 'offCanvasMenu'}
         .mobile-bar-title
           = link_to root_path do
