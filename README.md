@@ -27,6 +27,6 @@ psql postgres
 
 # after you get connected run these 2 queries:
 CREATE ROLE lacocina;
-ALTER ROLE lacocina with CREATEDB;
+ALTER ROLE lacocina with CREATEDB LOGIN;
 # you can quit by typing `\q`
 ```
