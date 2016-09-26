@@ -12,6 +12,7 @@
 	    	width: 100%;
 	    	background-color: transparent;
 	    	color: #fff;
+				padding: 2%;
 	  	}
 	}
 
@@ -22,6 +23,7 @@
 	    	letter-spacing: 1px;
 	    	line-height: 0.9;
 	    	text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+			  margin: 0;
 	  	}
 
 		@include breakpoint(small only) {
