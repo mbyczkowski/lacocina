@@ -55,6 +55,7 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #ec5840,
 );
+$merlot: #65003D;
 $light-gray: #C9D0D27;
 $lighter-gray: #F4F6F7;
 $medium-gray: #cacaca;
@@ -200,12 +201,13 @@ $input-error-font-weight: $global-weight-bold;
 
 $accordion-background: $white;
 $accordion-plusminus: true;
-$accordion-item-color: foreground($accordion-background, $primary-color);
+$accordion-item-color: foreground($accordion-background, #33494c);
 $accordion-item-background-hover: $light-gray;
 $accordion-item-padding: 1.25rem 1rem;
+
 $accordion-content-background: $white;
 $accordion-content-border: 1px solid $light-gray;
-$accordion-content-color: foreground($accordion-background, $primary-color);
+$accordion-content-color: foreground($accordion-background, $dark-gray);
 $accordion-content-padding: 1rem;
 
 // 8. Accordion Menu
