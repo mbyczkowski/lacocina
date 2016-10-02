@@ -552,12 +552,12 @@ $titlebar-icon-spacing: 0.25rem;
 
 $has-tip-font-weight: $global-weight-bold;
 $has-tip-border-bottom: 0px;
-$tooltip-background-color: $black;
-$tooltip-color: $white;
-$tooltip-padding: 0.75rem;
+$tooltip-background-color: $white;
+$tooltip-color: $dark-sky-blue;
+$tooltip-padding: 0.35rem;
 $tooltip-font-size: $small-font-size;
-$tooltip-pip-width: 0.75rem;
-$tooltip-pip-height: $tooltip-pip-width * 0.866;
+$tooltip-pip-width: 0.45rem;
+$tooltip-pip-height: $tooltip-pip-width * 1.1;
 $tooltip-radius: $global-radius;
 
 // 36. Top Bar
