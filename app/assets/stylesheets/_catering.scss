@@ -1,0 +1,83 @@
+@import 'settings';
+
+.catering-banner{
+	.image {
+		position: relative;
+	  	width: 100%;
+
+		.caption {
+	    	position: absolute;
+	   		bottom: 0;
+	    	text-align: right;
+	    	width: 100%;
+	    	background-color: transparent;
+	    	color: #fff;
+				padding: 2%;
+	  	}
+	}
+
+	.caption {
+	 	h1 {
+	   		font-size: 4rem;
+	    	color: #fff;
+	    	letter-spacing: 1px;
+	    	line-height: 0.9;
+	    	text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+			  margin: 0;
+	  	}
+
+		@include breakpoint(small only) {
+			h1 {
+	    		font-size: 1.5rem;
+	   		}
+		}
+	}
+}
+
+
+.catering-info{
+	.large-9.columns {
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 1.5;
+		color: $dark-gray;
+	}
+
+	h2 {
+		color: $copper;
+	}
+
+	small {
+		color: $merlot;
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+	p {
+		color: $charcoal-gray;
+		font-size: 15px;
+		line-height: 1.6;
+	}
+}
+
+
+.caterers {
+	h2 {
+		color: $copper;
+	}
+	ul {
+		list-style: none;
+
+		a {
+			color: $dark-sky-blue;
+			font-weight: bold;
+
+			&:visited {
+      			color: $dark-sky-blue;
+    		}
+    		&:hover {
+    			color: $mid-blue;
+			}
+		}
+	}
+}
