@@ -98,3 +98,9 @@
     margin: 1rem;
   }
 }
+
+.story-banner {
+  @include breakpoint(small down) {
+    display: none;
+  }
+}
