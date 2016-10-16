@@ -1,7 +1,7 @@
 #offCanvasMenu.off-canvas.position-left{'data-off-canvas': true}
   %button.close-button{'aria-label': 'Close menu', 'type': 'button', 'data-close': ""}
-    %span{'aria-hidden': true}×
-  %ul.vertical.menu{'data-drilldown': true}
+    %span{'aria-hidden': true} &times;
+  %ul.vertical.menu{'data-drilldown': ""}
     - menu_items.each do |menu_item|
       - klass = menu_item[:submenu] ? 'has-submenu' : ''
       %li{class: klass}
