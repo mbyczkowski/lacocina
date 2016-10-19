@@ -26,14 +26,16 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.off-canvas .menu {
-  &.vertical {
-    li:first-child {
-      padding-top: 2.6rem;
-    }
-    .button {
-      text-align: left;
-      margin-top: 0.7rem;
+.off-canvas {
+  .is-drilldown {
+    margin-top: 3.0rem;
+  }
+  .menu {
+    &.vertical {
+      .button {
+        text-align: left;
+        margin-top: 0.7rem;
+      }
     }
   }
 }
