@@ -8,6 +8,8 @@
             = image_tag 'logo.png'
     .show-for-large
       %nav#top-menu.top-bar{'data-topbar': true, role: 'navigation'}
+        - if signed_in?
+          = link_to "Sign Out", sign_out_path, method: :delete
         .top-bar-title.logo-size
           = link_to root_path do
             = image_tag 'logo.png'
