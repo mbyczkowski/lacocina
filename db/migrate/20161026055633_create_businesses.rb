@@ -3,9 +3,9 @@ class CreateBusinesses < ActiveRecord::Migration
     create_table :businesses do |t|
       t.timestamps null: false
       t.string :name, null: false
-      t.boolean :offers_catering, null: false
+      t.boolean :offers_catering, default: false
       t.string :slug, null: false
-      t.string :website, null: false
+      t.string :website
     end
 
     add_index :businesses, :offers_catering

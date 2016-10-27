@@ -28,7 +28,7 @@
 
 .row.text-center.caterers
   %h2.copper Our Businesses that offer Catering
-  = render partial: 'partials/businesses'
+  = render partial: 'partials/businesses', locals: { businesses: businesses_with_catering }
 .row
   .large-12.large-centered.columns.text-center
     %h2.copper Frequently asked questions

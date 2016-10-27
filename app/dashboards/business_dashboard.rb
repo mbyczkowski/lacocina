@@ -9,6 +9,7 @@ class BusinessDashboard < Administrate::BaseDashboard
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
     id: Field::Number,
+    slug: Field::String,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
     name: Field::String,

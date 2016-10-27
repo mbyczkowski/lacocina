@@ -10,6 +10,7 @@
 
 - run `bundle install`
 - make sure that your PostgreSQL server is running, and then run `bundle exec rake db:setup`
+- seed some data with `bundle exec rake db:seed`
 - if you got no errors then run `bundle exec rails server` and visit http://localhost:3000 in your browser
 
 ### Using Vagrant
