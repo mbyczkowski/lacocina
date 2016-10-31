@@ -73,7 +73,7 @@ module ApplicationHelper
     ]
   end
 
-  def features_businesses
+  def featured_businesses
     @features_businesses ||= Business.with_logo
   end
 
