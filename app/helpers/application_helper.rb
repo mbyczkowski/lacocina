@@ -68,7 +68,7 @@ module ApplicationHelper
       },
       {
         name: 'Shop',
-        url: 'http://lacocinastore.mybigcommerce.com'
+        url: 'https://la-cocina-sf-store.myshopify.com'
       }
     ]
   end
