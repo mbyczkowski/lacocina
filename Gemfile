@@ -33,6 +33,9 @@ gem 'administrate', github: 'kpheasey/administrate'
 # Manages user authentication and user emails
 gem 'clearance'
 
+# Generate friendly IDs
+gem 'friendly_id', '~> 5.1.0'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
