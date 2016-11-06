@@ -80,4 +80,12 @@ module ApplicationHelper
   def businesses_with_catering
     @businesses_with_catering ||= Business.with_logo.with_catering
   end
+
+  def business_link(business)
+    if business.website_url
+      link_to business.name, business.website_url
+    else
+      business.name
+    end
+  end
 end

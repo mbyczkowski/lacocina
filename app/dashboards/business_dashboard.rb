@@ -13,6 +13,7 @@ class BusinessDashboard < Administrate::BaseDashboard
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
     name: Field::String,
+    website_url: Field::String,
     offers_catering: Field::Boolean,
   }.freeze
 
@@ -37,6 +38,7 @@ class BusinessDashboard < Administrate::BaseDashboard
     :updated_at,
     :name,
     :slug,
+    :website_url,
     :offers_catering,
   ].freeze
 
@@ -46,12 +48,13 @@ class BusinessDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = [
     :name,
     :offers_catering,
+    :website_url,
   ].freeze
 
   # Overwrite this method to customize how users are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(user)
-  #   "User ##{user.id}"
-  # end
+  def display_resource(business)
+    business.name
+  end
 end
