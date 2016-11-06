@@ -141,19 +141,6 @@
     }
   }
 
-  .map h6 {
-    color: map-get($foundation-palette, secondary);
-  }
-
-  .stats {
-    text-align: center;
-
-    h3 {
-      text-transform: none;
-      font-weight: normal;
-    }
-  }
-
   .primary {
     color: map-get($foundation-palette, primary);
   }
@@ -229,6 +216,19 @@
   .story-banner {
     @include breakpoint(small down) {
       display: none;
+    }
+  }
+}
+
+.image {
+  position: relative;
+  width: 100%;
+
+  .overlay {
+    position: absolute;
+
+    &.bottom-center {
+      bottom: 0;
     }
   }
 }
