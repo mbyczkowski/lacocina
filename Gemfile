@@ -14,7 +14,8 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 # Use Foundation for building the UI
-gem 'foundation-rails'
+# TODO: switch to 6.3 once it's released - it will allow for HTML in tooltips
+gem 'foundation-rails', github: 'mbyczkowski/foundation-rails'
 # Use HAML for building HTML templates
 gem 'haml'
 

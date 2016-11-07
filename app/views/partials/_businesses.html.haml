@@ -2,4 +2,4 @@
   - businesses.each_with_index do |b, i|
     - klass = i == businesses.length - 1 ? 'end' : ''
     .float-left{class: klass}
-      = image_tag "businesses/#{b.logo_url}", "data-tooltip aria-haspopup" => "true","class" => "has-tip","data-disable-hover" => "false","tabindex" => "1","title" => "#{b.name}"
+      = image_tag "businesses/#{b.logo_url}", "data-allow-html" => true, "data-tooltip aria-haspopup" => "true","class" => "has-tip","data-disable-hover" => "false","tabindex" => "1","title" => "#{business_link(b)}"

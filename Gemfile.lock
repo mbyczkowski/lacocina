@@ -15,6 +15,15 @@ GIT
       sass-rails (~> 5.0)
       selectize-rails (~> 0.6)
 
+GIT
+  remote: git://github.com/mbyczkowski/foundation-rails.git
+  revision: 40d745e38b297fd13c4b25eefd5ebceb78819190
+  specs:
+    foundation-rails (6.2.4.0)
+      railties (>= 3.1.0)
+      sass (>= 3.3.0, < 3.5)
+      sprockets-es6 (>= 0.9.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -87,10 +96,6 @@ GEM
       activemodel
     erubis (2.7.0)
     execjs (2.7.0)
-    foundation-rails (6.2.4.0)
-      railties (>= 3.1.0)
-      sass (>= 3.3.0, < 3.5)
-      sprockets-es6 (>= 0.9.0)
     friendly_id (5.1.0)
       activerecord (>= 4.0.0)
     globalid (0.3.6)
@@ -204,7 +209,7 @@ DEPENDENCIES
   byebug
   clearance
   coffee-rails (~> 4.1.0)
-  foundation-rails
+  foundation-rails!
   friendly_id (~> 5.1.0)
   haml
   jbuilder (~> 2.0)
