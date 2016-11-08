@@ -32,12 +32,12 @@
   }
 
 .donate-page
-  .row.hero
-    .large-12.columns
-      .image-callout
-        = image_tag "combined-shape.svg"
-        .text SUPPORT THE NEXT GENERATION OF LA COCINA ENTREPRENEURS
-      = responsive_image_tag 'donate.jpg'
+  .hero
+    .image-callout
+      = image_tag "combined-shape.svg"
+      .text SUPPORT THE NEXT GENERATION OF LA COCINA ENTREPRENEURS
+    = responsive_image_tag 'donate.jpg'
+
   .row
     .large-4.columns
       .embed-container
@@ -51,14 +51,13 @@
       .row.text-center
         %p The mission of La Cocina is to cultivate low-income food entrepreneurs as they formalize and grow their businesses by providing affordable commercial kitchen space, industry-specific technical assistance and access to market opportunities. We focus primarily on women from communities of color and immigrant communities. Our vision is that entrepreneurs will become economically self-sufficient and contribute to a vibrant economy doing what they love to do.
 
-  .row.testimonial
+  .testimonial
     = responsive_image_tag "testimonial.jpg"
     .text
       .quote With La Cocina’s guidance and support, I’ve been making that dream a reality.”
       .author Enterpreneur’s name, business name
 
-  .large-12.text-center.support
-
+  .row.large-12.text-center.support
     .row.text-center
       %h2 What Your Donation Helps to Support
       %p.sub-header 100% of your donation goes to program operating costs which allow La Cocina to provide low income entrepreneurs with the following resources:
