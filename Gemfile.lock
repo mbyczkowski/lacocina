@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/kpheasey/administrate.git
-  revision: e7988272df23d8507adada7ce0b4662cdc97e61f
+  revision: 3679cb5c15372d3e70c60c26143e0fc6cc31a7d8
   specs:
     administrate (0.2.2)
       autoprefixer-rails (~> 6.0)
@@ -63,7 +63,7 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.3)
-    autoprefixer-rails (6.5.1.1)
+    autoprefixer-rails (6.5.2)
       execjs
     babel-source (5.8.35)
     babel-transpiler (0.7.0)
@@ -224,4 +224,4 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-   1.13.1
+   1.13.6
