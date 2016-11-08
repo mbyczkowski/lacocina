@@ -1,75 +1,63 @@
-.row
-  .image
+.homepage
+  .hero
+    .image-callout
+      = image_tag "combined-shape-homepage.svg"
+      .text
+        .header La Cocina
+        .sub-header Cultivating food entrepreneurs
+        .cta= link_to 'Donate', '/donate', class: 'hollow dark-background button'
     = responsive_image_tag 'home.jpg'
-    .caption
-      %h1 La Cocina
-      %h1.subheader Cultivating food entrepreneurs
-      = link_to 'Donate', '/donate', class: 'hollow dark-background button'
 
-.row.call-to-action-boxes
-  .medium-4.columns.text-center
-    = image_tag 'icons/calendar.svg'
-    %h4 La Cocina Events
-    %p Eat, laugh and learn something new.
-    = link_to 'See our events', events_path, class: 'button'
-  .medium-4.columns.text-center
-    = image_tag 'icons/support.svg'
-    %h4 Get Involved
-    %p Be part of the movement.
-    = link_to 'Get Involved', '/volunteer', class: 'button'
-  .medium-4.columns.text-center
-    = image_tag 'icons/gift.svg'
-    %h4 La Cocina Gift Boxes
-    %p Make a difference.
-    = link_to 'Buy a gift box', 'https://la-cocina-sf-store.myshopify.com', class: 'button'
+  .row.call-to-action-boxes
+    .medium-4.columns.text-center
+      = image_tag 'icons/calendar.svg'
+      %h4 La Cocina Events
+      %p Eat, laugh and learn something new.
+      = link_to 'See our events', events_path, class: 'button'
+    .medium-4.columns.text-center
+      = image_tag 'icons/support.svg'
+      %h4 Get Involved
+      %p Be part of the movement.
+      = link_to 'Get Involved', '/volunteer', class: 'button'
+    .medium-4.columns.text-center
+      = image_tag 'icons/gift.svg'
+      %h4 La Cocina Gift Boxes
+      %p Make a difference.
+      = link_to 'Buy a gift box', 'https://la-cocina-sf-store.myshopify.com', class: 'button'
 
-.row.story-banner
-  = image_tag 'bini.png'
+  .story-banner.testimonial
+    = responsive_image_tag "bini.jpg"
+    .text
+      .quote "I thank god every day for La Cocina... but it was momos that saved my life."
+      .author Binita Pradhan, Bini's Kitchen
+      .cta= link_to "READ BINITA’S STORY", "http://www.sfgate.com/food/eatup/article/Bini-s-Kitchen-cooks-up-Nepalese-charm-in-6738213.php", class: "hollow button"
 
-.row
-  .large-8.columns.stats
-    .row
-      .large-6.small-6.columns
-        %h1.secondary 94%
-        %h3.secondary of La Cocina business owners are women
-      .large-6.small-6.columns
-        %h1.primary 91%
-        %h3.primary people of color
-    .row
-      .large-6.small-6.columns
-        %hr
-        %h1.primary 70%
-        %h3.primary parents
-      .large-6.small-6.columns
-        %hr
-        %h1.secondary 60%
-        %h3.secondary immigrants
-    .row
-      = link_to 'Learn more about La Cocina', '/mission', class: 'expanded hollow button'
-  .large-4.columns.map
-    %h6 Find La Cocina businesses around you!
+  .row.who-we-work-with
+    %h2 WHO WE WORK WITH
+
+    .large-6.columns
+      .business-owners
+        .col.number-of-business-owners 33
+
+        .col
+          .header Business Owners in 2015
+          .sub-header At La Cocina, women and people of color are owners and leaders.
+
+    .large-6.columns.pie-charts
+      = render partial: 'partials/pie_chart', locals: { percentage: "94", caption: "Women" }
+      = render partial: 'partials/pie_chart', locals: { percentage: "70", caption: "Parents" }
+      = render partial: 'partials/pie_chart', locals: { percentage: "60", caption: "Immigrants" }
+      = render partial: 'partials/pie_chart', locals: { percentage: "91", caption: "People of color" }
+
+
+  .row
+    %h2 FIND OUR BUSINESSES AROUND YOU
+
+
+  .map
     %iframe{src: "https://www.google.com/maps/d/embed?mid=1OcGetCOiKBlGyYudjmBuRQSnOC0", style: "height:300px;width:100%;"}
 
-.row
-  .large-8.columns.text-center
-    %h6.secondary Our Businesses
+  .row.text-center
+    %h2.secondary Our Businesses
     = render partial: 'partials/businesses', locals: { businesses: featured_businesses }
-  .large-4.columns
-    %h6.secondary Stay Connected
-    .fb-follow{'data-href': "https://www.facebook.com/lacocinasforg", 'data-layout': "standard", 'data-size': "large", 'data-show-faces': "true"}
-    %p
-      = link_to "Follow @lacocinasf", "https://twitter.com/lacocinasf", class: "twitter-follow-button", 'data-show-count': true, 'data-size': 'large'
-      %script{async: true, src: "//platform.twitter.com/widgets.js", charset: "utf-8"}
-    %p
-      %script{src: "https://apis.google.com/js/platform.js"}
-      .g-ytsubscribe{'data-channel': "LaCocinaSForg", 'data-layout': "default", 'data-count': "default"}
-    %blockquote.instagram-media{'data-instgrm-captioned': "", 'data-instgrm-version': "7", style: " background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"}
-      %div{style: "padding:8px;"}
-        %div{style: " background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"}
-        %div{style: " background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"}
-        %p{style: " margin:8px 0 0 0; padding:0 4px;"}
-        %a{:href => "https://www.instagram.com/p/91RxvVEpNn/", :style => " color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;", :target => "_blank"} delicious scones and muffins from @agirlnamedpinky and @crumbleandwhisk. Cold brew nitro from @equatorcoffees. I had no idea what that was but it was delicious. Caffeine and sugar. Ready for conference!
-        %p{style: " color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"}
-          A photo posted by La Cocina (@lacocinasf) on
-          %time{datetime: "2015-11-08T17:37:09+00:00", style: " font-family:Arial,sans-serif; font-size:14px; line-height:17px;"} Nov 8, 2015 at 9:37am PST
-    %script{async: "", defer: "defer", src: "//platform.instagram.com/en_US/embeds.js"}
+

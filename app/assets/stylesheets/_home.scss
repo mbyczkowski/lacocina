@@ -1,106 +1,261 @@
 @import 'settings';
-
-.call-to-action-boxes img {
-  width: 100px;
-  height: 100px;
-  margin: 10px 0;
-}
-
-.map h6 {
-  color: map-get($foundation-palette, secondary);
-}
-
-.stats {
-  text-align: center;
-
-  h3 {
-    text-transform: none;
-    font-weight: normal;
+.homepage {
+  h2 {
+    font-weight : 700;
+    color       : $charcoal-gray;
+    text-align  : center;
   }
-}
 
-.primary {
-  color: map-get($foundation-palette, primary);
-}
+  .pie-chart {
+    display    : inline-block;
+    text-align : center;
 
-.secondary {
-  color: map-get($foundation-palette, secondary);
-}
+    .graphic {
+      position : relative;
+      display  : inline-block;
 
-.social-media-links h3 {
-  display: inline
-}
+      svg {
+        background    : rgba(100, 13, 61, 0.5);
+        border-radius : 50%;
+        transform     : rotate(-90deg);
 
-.image {
-  position: relative;
-  width: 100%;
+        .circle { fill: rgba(255, 255, 255, .2); }
+      }
+
+      .pie-chart-label {
+        position  : absolute;
+        top       : 20px;
+        left      : 50%;
+        transform : translateX(-50%);
+        color     : white;
+        font-size : 32px;
+
+        &:after {
+          content        : "%";
+          font-size      : 18px;
+          vertical-align : super;
+        }
+      }
+    }
+
+    .pie-chart-caption {
+      color     : #333;
+      font-size : 24px
+    }
+  }
+
+  .hero {
+    position : relative;
+
+    .image-callout {
+      position  : absolute;
+      bottom    : -51px;
+      left      : 50%;
+      transform : translateX(-50%);
+
+      .text {
+        position    : absolute;
+        font-family : Raleway;
+        font-weight : 300;
+        color       : white;
+        top         : 40px;
+        text-align  : center;
+        left        : 50%;
+        transform   : translateX(-50%);
+
+        .header {
+          font-size   : 44px;
+          line-height : 45px;
+        }
+
+        .sub-header {
+          font-size   : 36px;
+          line-height : 45px;
+          white-space : nowrap;
+        }
+
+        .cta { margin-top : 30px; }
+      }
+    }
+  }
+
+  .testimonial {
+    position      : relative;
+    margin-top    : 35px;
+    margin-bottom : 50px;
+
+    .text {
+      position     : absolute;
+      top          : 0;
+      right        : 0;
+      bottom       : 0;
+      margin-right : 85px;
+      margin-top   : 80px;
+      font-family  : Raleway;
+      font-weight  : 300;
+      text-align   : center;
+      color        : #333;
+      line-height  : 49px;
+
+      .quote {
+        font-size     : 36px;
+        width         : 765px;
+        margin-bottom : 20px;
+      }
+
+      .author {
+        line-height : 58px;
+        font-size   : 25px;
+      }
+    }
+  }
+
+  .who-we-work-with {
+    margin-bottom : 60px;
+
+    .business-owners {
+      display : table;
+
+      .col {
+        display : table-cell;
+        vertical-align: top;
+      }
+
+      .number-of-business-owners {
+        font-size     : 62px;
+        font-weight   : 300;
+        color         : #640d3e;
+        padding-right : 10px;
+        line-height   : .6;
+      }
+
+      .header {
+        font-size   : 36px;
+        font-weight : 800;
+        color       : #640d3e;
+      }
+
+      .sub-header {
+        font-size   : 24px;
+        font-weight : 500;
+        color       : #333333;
+      }
+    }
+
+    .pie-charts {
+      padding-top     : 22px;
+      flex-direction  : row;
+      justify-content : space-between;
+      display         : flex;
+    }
+  }
+
+  .call-to-action-boxes {
+    margin-top : 40px;
+
+    img {
+      width  : 100px;
+      height : 100px;
+      margin : 10px 0;
+    }
+  }
+
+  .map h6 {
+    color: map-get($foundation-palette, secondary);
+  }
+
+  .stats {
+    text-align: center;
+
+    h3 {
+      text-transform: none;
+      font-weight: normal;
+    }
+  }
+
+  .primary {
+    color: map-get($foundation-palette, primary);
+  }
+
+  .secondary {
+    color: map-get($foundation-palette, secondary);
+  }
+
+  .social-media-links h3 {
+    display: inline
+  }
+
+  .image {
+    position: relative;
+    width: 100%;
+
+    .caption {
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      width: 100%;
+      background-color: transparent;
+      color: #fff;
+    }
+  }
 
   .caption {
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    width: 100%;
-    background-color: transparent;
-    color: #fff;
-  }
-}
-
-.caption {
-  h1 {
-    font-size: 4rem;
-    color: #fff;
-    letter-spacing: 1px;
-    line-height: 0.9;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
-  }
-
-  h1.subheader {
-    font-size: 3rem;
-    font-weight: normal;
-    text-transform: none;
-    text-shadow: none;
-  }
-
-  .button {
-    margin-top: 1rem;
-    min-width: 284px;
-  }
-
-  @include breakpoint(small only) {
     h1 {
-      font-size: 1.5rem;
+      font-size: 4rem;
+      color: #fff;
+      letter-spacing: 1px;
+      line-height: 0.9;
+      text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
     }
 
     h1.subheader {
-      font-size: 1rem;
+      font-size: 3rem;
+      font-weight: normal;
+      text-transform: none;
+      text-shadow: none;
     }
 
     .button {
-      margin-top: 0.5rem;
-      min-width: 142px;
+      margin-top: 1rem;
+      min-width: 284px;
+    }
+
+    @include breakpoint(small only) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      h1.subheader {
+        font-size: 1rem;
+      }
+
+      .button {
+        margin-top: 0.5rem;
+        min-width: 142px;
+      }
     }
   }
-}
 
-.dark-background.button {
-  color: #fff;
-  border-color: #fff;
-  &:hover {
-    color: $copper;
-    border-color: $copper;
+  .dark-background.button {
+    color: #fff;
+    border-color: #fff;
+    &:hover {
+      color: $copper;
+      border-color: $copper;
+    }
   }
-}
 
-.businesses {
-  img {
-    height: 5rem;
-    width: 5rem;
-    margin: 1rem;
+  .businesses {
+    img {
+      height: 5rem;
+      width: 5rem;
+      margin: 1rem;
+    }
   }
-}
 
-.story-banner {
-  @include breakpoint(small down) {
-    display: none;
+  .story-banner {
+    @include breakpoint(small down) {
+      display: none;
+    }
   }
 }
