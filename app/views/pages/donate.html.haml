@@ -1,10 +1,9 @@
 :scss
   .embed-container {
     position: relative;
-    padding-bottom: 56.25%;
     overflow: hidden;
     max-width: 100%;
-    height: 325px;
+    height: 407px;
   }
   .embed-container iframe, .embed-container object, .embed-container embed {
     position: absolute;
@@ -32,40 +31,57 @@
     $('.loadImg').css('display','none')
   }
 
+.donate-page
+  .row.hero
+    .large-12.columns
+      .image-callout
+        %img{ src: "/assets/combined-shape.svg" }
+        .text SUPPORT THE NEXT GENERATION OF LA COCINA ENTREPRENEURS
+      = responsive_image_tag 'donate.jpg'
+  .row
+    .large-4.columns
+      .embed-container
+        .loadImg
+          = image_tag 'loading.svg'
+        %iframe{src: "https://connect.clickandpledge.com/w/Organization/lacocinasf/paymentwidget/06e3dbaf-d3f9-4dde-96ce-1feec8319d2a", frameborder: "0", allowfullscreen: true, name: "iframe",onload: "load()"}
 
-.row
-  .large-8.columns
-    = responsive_image_tag 'donate.jpg'
-  .large-4.columns
-    .embed-container
-      .loadImg
-        = image_tag 'loading.svg'
-      %iframe{src: "https://connect.clickandpledge.com/w/Organization/lacocinasf/paymentwidget/06e3dbaf-d3f9-4dde-96ce-1feec8319d2a", frameborder: "0", allowfullscreen: true, name: "iframe",onload: "load()"}
-.row
-  .large-12.columns.text-center
-    %h1 Be part of defining what La Cocina can mean
-    .row
-      %p The mission of La Cocina is to cultivate low-income food entrepreneurs as they formalize and grow their businesses by providing affordable commercial kitchen space, industry-specific technical assistance and access to market opportunities. We focus primarily on women from communities of color and immigrant communities. Our vision is that entrepreneurs will become economically self-sufficient and contribute to a vibrant economy doing what they love to do.
+    .large-8.columns.mission
+      .text-center
+        %h1 Be part of defining what La Cocina can mean
+      .row.text-center
+        %p The mission of La Cocina is to cultivate low-income food entrepreneurs as they formalize and grow their businesses by providing affordable commercial kitchen space, industry-specific technical assistance and access to market opportunities. We focus primarily on women from communities of color and immigrant communities. Our vision is that entrepreneurs will become economically self-sufficient and contribute to a vibrant economy doing what they love to do.
+
+  .row.testimonial
+    = responsive_image_tag "testimonial.jpg"
+    .text
+      .quote With La Cocina’s guidance and support, I’ve been making that dream a reality.”
+      .author Enterpreneur’s name, business name
+
+  .large-12.text-center.support
+
+    .row.text-center
+      %h2 What Your Donation Helps to Support
+      %p.sub-header 100% of your donation goes to program operating costs which allow La Cocina to provide low income entrepreneurs with the following resources:
+
+      .resources
+        .row
+          .large-6.columns
+            %p.title Subsidized commercial kitchen space
+            %p.description Access to an affordable commercial kitchen is one of the largest barriers to entry for up and coming food entrepreneurs. Donations allow us to subsidize our kitchen rental. Program participants at La Cocina pay an average of $13/hour for kitchen rental space saving them thousands of dollars annually.
+
+          .large-6.columns
+            %p.title Industry-Specific Technical Assistance
+            %p.description We provide 2,000 hours of technical-assistance annually, beginning with a 6-month intensive curriculum in product, finance, marketing and operations and followed by one on one monthly consultations. A rich network more than 200 dedicated professionals provides free or subsidized technical assistance in everything from product development to financial forecasting to photography.
+
+        .row.text-center
+          .large-6.columns
+            %p.title Workshops
+            %p.description From marketing your business to HR employment law, La Cocina facilitates workshops to its clients and the general public in various aspects of food business knowledge.
+
+          .large-6.columns
+            %p.title Access to Markets and Market Positioning
+            %p.description La Cocina connects vendors to market opportunities like special catering events, farmers’ markets and ultimately, brick & mortars to sell their incredible food and grow their businesses
+
     .row.text-center
       %h2.copper Our Entrepreneurs
       = render partial: 'partials/businesses', locals: { businesses: featured_businesses }
-    %hr
-    .row.text-center
-      %h2.copper What Your Donation Helps to Support
-      %p
-        %strong 100% of your donation goes to program operating costs which allow La Cocina to provide low income entrepreneurs with the following resources
-      .large-6.columns
-        %p.subheading.secondary Subsidized commercial kitchen space
-        %p Access to an affordable commercial kitchen is one of the largest barriers to entry for up and coming food entrepreneurs. Donations allow us to subsidize our kitchen rental. Program participants at La Cocina pay an average of $13/hour for kitchen rental space saving them thousands of dollars annually.
-      .large-6.columns
-        %p.subheading.secondary Workshops
-        %p From marketing your business to HR employment law, La Cocina facilitates workshops to its clients and the general public in various aspects of food business knowledge.
-    .row.text-center
-      .large-6.columns
-        %p.subheading.secondary Industry-Specific Technical Assistance
-        %p We provide 2,000 hours of technical-assistance annually, beginning with a 6-month intensive curriculum in product, finance, marketing and operations and followed by one on one monthly consultations. A rich network more than 200 dedicated professionals provides free or subsidized technical assistance in everything from product development to financial forecasting to photography.
-      .large-6.columns
-        %p.subheading.secondary Access to Markets and Market Positioning
-        %p La Cocina connects vendors to market opportunities like special catering events, farmers’ markets and ultimately, brick & mortars to sell their incredible food and grow their businesses
-    .row.text-center
-      = link_to 'Donate Now', 'https://co.clickandpledge.com/sp/d2/default.aspx?wid=119632', class: 'button wide'
