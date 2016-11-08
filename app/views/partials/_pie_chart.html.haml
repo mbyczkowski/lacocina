@@ -1,0 +1,6 @@
+%div.pie-chart
+  %div.graphic
+    %svg{ width: 80, height: 80, viewbox: "0 0 32 32"}
+      %circle.circle{ r: 16, cx: 16, cy: 16, "stroke-dasharray": percentage + " 100", "stroke-width": 32, stroke: "#65003d" }
+    %span.pie-chart-label= percentage
+  %div.pie-chart-caption= caption
