@@ -1,0 +1,35 @@
+@import 'settings';
+
+.people-page {
+  .person {
+    color : $charcoal_gray;
+
+    .photo {
+      padding-right : 30px;
+    }
+
+    .info {
+      font-size     : 24px;
+      font-weight   : 600;
+      line-height   : 1.25;
+      margin-bottom : 5px;
+    }
+
+    .contact {
+      font-size     : 20px;
+      font-weight   : 500;
+      line-height   : 1.5;
+      margin-bottom : 10px;
+
+      a {
+        color : $dark-sky-blue;
+      }
+    }
+
+    .content {
+      font-size   : 15px;
+      font-weight : 500;
+      line-height : 1.73;
+    }
+  }
+}
