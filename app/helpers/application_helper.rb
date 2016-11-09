@@ -128,7 +128,7 @@ module ApplicationHelper
         title: 'tbd',
         phone: '415-824-2729 ext 310',
         email: 'maribel@lacocinasf.org',
-        photo: 'maribel.jpg',
+        photo: 'maribel.png',
         content: [
           'A Los Angeles native, Maribel, grew up in a very large, close and, boisterous family. Always having something to celebrate, her family parties consisted of tamales, arroz, frijoles, tortillas and arranchera. She longed to be like her friends and eat “American” food.',
           'After making the difficult decision to leave her family in Southern California she moved to the Bay Area  for school. As the first person in her family to graduate from college she was ready for new adventures,  just not in food. Ambitious and driven, a few years later she found herself working as a Marketing Director for a design company.',
