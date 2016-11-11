@@ -2,9 +2,8 @@
   = image_tag "people/hero.jpg"
   - people_page.each do |person|
     .row.person
-      .large-4.columns
-        .photo
-          = image_tag "people/" + person[:photo]
+      .large-4.columns.photo
+        = image_tag "people/" + person[:photo]
 
       .large-8.columns
         .info
