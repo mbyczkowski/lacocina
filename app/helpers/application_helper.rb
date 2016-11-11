@@ -6,6 +6,31 @@ module ApplicationHelper
     image_tag "","data-interchange" => "[#{asset_path(large_name)}, large],[#{asset_path(medium_name)}, only screen and (min-width: 40.063em) and (max-width: 64em)],[#{asset_path(small_name)}, only screen and (max-width: 40em)]"
   end
 
+  def social_media_links
+    [
+      {
+        name: 'instagram',
+        icon: 'instagram.svg',
+        link: 'https://www.instagram.com/lacocinasf/'
+      },
+      {
+        name: 'twitter',
+        icon: 'twitter.svg',
+        link: 'https://twitter.com/lacocinasf'
+      },
+      {
+        name: 'facebook',
+        icon: 'facebook.svg',
+        link: 'https://www.facebook.com/lacocinasforg/'
+      },
+      {
+        name: 'youtube',
+        icon: 'youtube.svg',
+        link: 'https://youtube.com/'
+      }
+    ]
+  end
+
   def people_page
     [
       {

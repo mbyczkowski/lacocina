@@ -1,16 +1,17 @@
-%footer
-  .row.footer
-    .sitemap
-      %p Sitemap
+%footer.footer
+  .header Stay Connected
 
-    .copyright
-      %p
-        Design:
-        %a{:href => "http://www.anitaby.design/"} Anita Byczkowska
-      %p
-        Development:
-        %a{:href => "#"} Mat Byczkowski,
-        %a{:href => "#"} Katie Thomas,
-        %a{:href => "#"} Michael Gump, and
-        %a{:href => "#"} Kelsey Onstenk
-      %p Copyright 2016 La Cocina
+  .newsletter-sign-up
+    %label Sign in with your email address below to receive our newsletter.
+
+    .input-button-combo
+      %input{:type => "email"}
+      .button Sign Up
+
+    .social-media-icons
+      - social_media_links.each do |site|
+        .social-media-icon
+          = link_to (image_tag "icons/" + site[:icon]), site[:link], { target: "_blank" }
+
+
+  .made-by MADE BY VOLUNTEERS 2016
