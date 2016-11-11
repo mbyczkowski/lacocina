@@ -6,25 +6,30 @@
         .mobile-bar-title
           = link_to root_path do
             = image_tag 'logo.png'
+
     .show-for-large
       %nav#top-menu.top-bar{'data-topbar': true, role: 'navigation'}
         - if signed_in?
           = link_to "Sign Out", sign_out_path, method: :delete
+
         .top-bar-title.logo-size
           = link_to root_path do
             = image_tag 'logo.png'
-        .top-bar-left
-          %ul.dropdown.menu{'data-dropdown-menu': true}
-            - menu_items.each do |menu_item|
-              - klass = menu_item[:submenu] ? 'is-dropdown-submenu-parent' : ''
-              %li{class: klass}
-                = link_to menu_item[:name], menu_item[:url]
-                - if menu_item[:submenu]
-                  %ul.menu.submenu.vertical{'data-submenu': true}
-                    - menu_item[:submenu].each do |submenu_item|
-                      %li
-                        = link_to submenu_item[:name], submenu_item[:url]
-        .top-bar-right
-          %ul.menu
-            %li
-              = link_to 'Donate', '/donate', class: 'button'
+
+        .social-media-icons
+          - social_media_links.each do |site|
+            .social-media-icon
+              = link_to (embedded_svg "icons/" + site[:icon]), site[:link], { target: "_blank" }
+          = link_to 'Donate', '/donate', class: 'button'
+
+        %ul.dropdown.menu{'data-dropdown-menu': true}
+          - menu_items.each do |menu_item|
+            - klass = menu_item[:submenu] ? 'is-dropdown-submenu-parent' : ''
+            %li{class: klass}
+              = link_to menu_item[:name], menu_item[:url]
+              - if menu_item[:submenu]
+                %ul.menu.submenu.vertical{'data-submenu': true}
+                  - menu_item[:submenu].each do |submenu_item|
+                    %li
+                      = link_to submenu_item[:name], submenu_item[:url]
+

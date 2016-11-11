@@ -4,9 +4,79 @@
   margin-top: 20px;
 }
 
+.heading {
+  max-width : none;
+  padding-right : 30px
+}
+
+header {
+  .social-media-icons {
+    text-align: right;
+
+    .social-media-icon {
+      display      : inline-block;
+      margin-right : 15px;
+      vertical-align: top;
+
+      rect { fill : #4e0330; }
+      path { fill : white; }
+    }
+  }
+
+  .dropdown.menu {
+    text-align: right;
+
+    li {
+      display: inline-block;
+
+      a {
+        text-transform : lowercase;
+        font-size      : 18px;
+        padding        : 0;
+        color          : $charcoal-gray;
+
+        &:hover {
+          color       : $merlot;
+          text-shadow : 0.2px 0 0 $merlot, -0.2px 0 0 $merlot, 0 -0.2px 0 $merlot, 0 0.2px 0 $merlot;
+        }
+      }
+
+       &.is-active > a {
+        color       : $merlot;
+        text-shadow : 0.2px 0 0 $merlot, -0.2px 0 0 $merlot, 0 -0.2px 0 $merlot, 0 0.2px 0 $merlot;
+      }
+    }
+
+    & > li { padding-left : 10px; }
+
+    .is-dropdown-submenu {
+      border     : none;
+      min-width  : 0;
+      border-top : 2px solid $merlot;
+      margin-top : 3px;
+      padding    : 10px 0;
+      text-align : left;
+      box-shadow : 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+
+      li {
+        padding    : 7px 10px;
+
+        &:not(:first-child) {
+          border-top : 1px solid $merlot;
+        }
+      }
+
+      a {
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
 .logo-size {
-  height: 65px;
-  width: 169px;
+  height     : 92px;
+  width      : 238px;
+  margin-top : -12px;
 }
 
 .top-bar {
