@@ -10,7 +10,9 @@
   }
 
   .hero {
-    .image-callout { width : 770px; }
+    .text.responsive-typography {
+      font-size: 2.5vw;
+    }
   }
 
   .mission {
@@ -43,19 +45,8 @@
       text-align   : center;
       color        : #ffffff;
       line-height  : 1.2;
-
-      .quote {
-        font-size : 36px;
-        width     : 465px
-      }
-
-      .author {
-        position    : absolute;
-        bottom      : 30px;
-        right       : 0;
-        line-height : 2.32;
-        font-size   : 25px;
-      }
+      width: 40vw;
+      margin: 4vw 4vw;
     }
   }
 
