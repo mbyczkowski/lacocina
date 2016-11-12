@@ -1,5 +1,17 @@
 @import 'settings';
 
+.quote {
+    font-size: 2.2rem;
+    line-height: 3rem;
+    font-weight: 300;
+    p {
+        color: $charcoal-gray;
+    }
+    a {
+        color: $dark-sky-blue;
+    }
+}
+
 .mission-banner{
 	.image {
 		position: relative;
