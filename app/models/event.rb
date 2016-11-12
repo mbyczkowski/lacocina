@@ -1,16 +1,46 @@
 class Event
   EVENTS = [
     {
-      title: 'Join Us for Farm to Fork This Weekend (8/29)',
-      body: "Farm To Fork San Francisco is gathering advocates and lovers of food in an effort to raise awareness around sustainability issues
-            and showcase the best farms, artisan food producers, breweries, cideries, distilleries and wineries in the Bay Area.
-            In the free-of-charge exhibitor section of the multi-level event, attendees will have the opportunity to purchase products, view
-            demonstrations, engage in interactive exhibits, and sample complimentary items from some of the Bay Area’s top food and
-            beverage producers.\nThe expo will also host a ticketed conference featuring speaker panels from a diverse lineup of thought leaders in food justice and
-            sustainability, as well as a keynote presentation from Ron Finley, “Guerilla Gardening” pioneer and former TED Talk presenter.
-            To cap off the event, Farm To Fork SF will host an afterparty featuring drink specials, a DJ set from Erykah Badu, AKA Lo Down
-            Loretta Brown, and live entertainment from stic.man of the influential hip hop group, Dead Prez, plus more."
+      title: 'Orientations 2017:',
+      subTitle: 'Jan 25th,  March 29th, May 31st, July 26th, September 27th, November 29th',
+      image: 'logo.png',
+      content: 'In order to apply to La Cocina’s incubator program, you must attend an orientation workshop on starting a food business in the Bay Area. This workshop is free and open to the public but we suggest that you sign up ahead of time to make checking in easier. We will send a confirmation email 1 week before the orientation to confirm your sign up. All orientations take place on Wednesdays from 6-8pm at La Cocina.',
+      actions: [
+        {
+          label: 'Sign In',
+          url: 'https://www.eventbrite.com/e/la-cocina-orientation-orientacion-de-la-cocina-tickets-19178270724'
+        }
+      ]
     },
+    {
+      title: 'Food & Entrepreneurship Conference',
+      subTitle: 'November 13-14th',
+      image: 'f&e_conf.png',
+      content: 'For the past 5 years, the Food + Entrepreneurship Conference has been a gathering place for civic leaders, nonprofit innovators, and forward thinking food business owners to come together, rethink economic structures, share innovations and work together to build more equitable, vibrant and delicious cities. Leaders and innovators from as close as Oakland to as far as Helsinki have looked to La Cocina throughout the years to engage in dialogue and revolutionize the way we produce, eat and think about food.',
+      actions: [
+        {
+          label: 'VISIT EVENT WEBSITE',
+          url: 'http://www.lacocinaconference.org',
+          type: 'hollow'
+        },
+        {
+          label: 'BUY TICKETS',
+          url: 'https://www.eventbrite.com/e/la-cocinas-food-entrepreneurship-conference-presented-by-whole-foods-market-tickets-25813318330'
+        }
+      ]
+    },
+    {
+      title: 'La Cocina Holiday Event',
+      subTitle: 'December 11th',
+      image: 'holiday_market.png',
+      content: 'For one day in December, La Cocina will transform The Women’s Building into a pop-up holiday bazaar, creating a vibrant marketplace, with over 20 food vendors and DIY artisans, for natives and tourists alike to celebrate local entrepreneurship and find the perfect gift and treats for the holidays. Look forward to a weekend of food, crafts, music and more!',
+      actions: [
+        {
+          label: 'BUY TICKETS',
+          url: 'https://www.eventbrite.com/e/la-cocina-presents-el-mercado-a-holiday-market-tickets-27164304165'
+        }
+      ]
+    }
   ]
 
   def self.all
@@ -33,7 +63,19 @@ class Event
     @opts[:title]
   end
 
-  def body
-    @opts[:body]
+  def subTitle
+    @opts[:subTitle]
+  end
+
+  def image
+    @opts[:image]
+  end
+
+  def content
+    @opts[:content]
+  end
+
+  def actions
+    @opts[:actions]
   end
 end

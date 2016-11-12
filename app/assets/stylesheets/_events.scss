@@ -1,0 +1,62 @@
+.events-page {
+  font-size : 15px;
+
+  h1, h2, p {
+    color : #333333;
+  }
+
+  .hero {
+    position : relative;
+
+    .image-callout {
+      width     : 582px;
+      position  : absolute;
+      bottom    : 0;
+      left      : 50%;
+      transform : translateX(-50%);
+
+      .text {
+        position       : absolute;
+        font-family    : Raleway;
+        font-size      : 44px;
+        font-weight    : 300;
+        line-height    : 1.18;
+        color          : white;
+        width          : 100%;
+        top            : 50%;
+        transform      : translateY(-50%);
+        text-align     : center;
+        text-transform : uppercase;
+      }
+    }
+  }
+
+  h1 {
+    font-size   : 28px;
+    font-weight : bold;
+  }
+
+  .events {
+    margin-bottom : 60px;
+
+    .event {
+      .event-image {
+        margin-top : 8px;
+      }
+
+      .title {
+        font-size   : 28px;
+        font-weight : bold;
+      }
+
+      .date {
+        font-size   : 20px;
+        font-weight : bold;
+      }
+
+      .action-bar {
+        .button { margin-right: 20px; }
+      }
+    }
+  }
+}
