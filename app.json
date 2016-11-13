@@ -3,7 +3,9 @@
   "scripts": {
   },
   "env": {
-    "GA_KEY": "UA-67983718-2",
+    "GA_KEY": {
+      "required": true
+    },
     "LANG": {
       "required": true
     },
