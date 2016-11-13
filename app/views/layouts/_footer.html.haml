@@ -9,9 +9,6 @@
       .button Sign Up
 
     .social-media-icons
-      - social_media_links.each do |site|
-        .social-media-icon
-          = link_to (embedded_svg "icons/" + site[:icon]), site[:link], { target: "_blank" }
-
+      = render partial: 'layouts/social_media'
 
   .made-by MADE BY VOLUNTEERS 2016
