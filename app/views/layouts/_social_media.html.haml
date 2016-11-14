@@ -1,0 +1,4 @@
+- social_media_links.each do |site|
+  .social-media-icon
+    = link_to site[:link], target: "_blank" do
+      = inline_svg "icons/" + site[:icon]

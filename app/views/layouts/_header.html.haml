@@ -17,9 +17,7 @@
             = image_tag 'logo.png'
 
         .social-media-icons
-          - social_media_links.each do |site|
-            .social-media-icon
-              = link_to (embedded_svg "icons/" + site[:icon]), site[:link], { target: "_blank" }
+          = render partial: 'layouts/social_media'
           = link_to 'Donate', '/donate', class: 'button'
 
         %ul.dropdown.menu{'data-dropdown-menu': true}
@@ -32,4 +30,3 @@
                   - menu_item[:submenu].each do |submenu_item|
                     %li
                       = link_to submenu_item[:name], submenu_item[:url]
-
