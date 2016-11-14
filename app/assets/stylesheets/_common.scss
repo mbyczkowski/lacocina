@@ -1,0 +1,33 @@
+.hero {
+  position : relative;
+
+  .image-callout {
+    position  : absolute;
+    bottom    : 0;
+    left      : 50%;
+    transform : translateX(-50%);
+
+    .text {
+      position       : absolute;
+      font-family    : Raleway;
+      font-size      : 44px;
+      font-weight    : 300;
+      line-height    : 1.18;
+      color          : white;
+      width          : 100%;
+      top            : 50%;
+      transform      : translateY(-50%);
+      text-align     : center;
+      text-transform : uppercase;
+      text-shadow    : 0 4px 4px rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+.businesses {
+  img {
+    height : 5rem;
+    width  : 5rem;
+    margin : 1rem;
+  }
+}

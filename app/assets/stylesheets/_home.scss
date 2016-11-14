@@ -245,14 +245,6 @@
     }
   }
 
-  .businesses {
-    img {
-      height: 5rem;
-      width: 5rem;
-      margin: 1rem;
-    }
-  }
-
   .story-banner {
     @include breakpoint(small down) {
       display: none;

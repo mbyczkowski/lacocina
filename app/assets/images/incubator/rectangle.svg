@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="968px" height="167px" viewBox="0 0 968 167" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>6E5EA061-0D05-460F-8922-7C7E759C9601</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="218.061283" y="526.809966" width="961.839219" height="116"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="961.839219" height="116" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square" opacity="0.748414855">
+        <g id="incubator-programe-" transform="translate(-215.000000, -501.000000)" stroke="#65003D" stroke-width="2" fill="#65003D">
+            <use id="Rectangle" mask="url(#mask-2)" transform="translate(698.980893, 584.809966) rotate(3.000000) translate(-698.980893, -584.809966) " xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>
