@@ -10,26 +10,7 @@
   }
 
   .hero {
-    position : relative;
-
-    .image-callout {
-      width     : 770px;
-      position  : absolute;
-      top       : 50%;
-      left      : 50%;
-      transform : translateX(-50%);
-
-      .text {
-        position    : absolute;
-        font-family : Raleway;
-        font-size   : 44px;
-        font-weight : 300;
-        line-height : 1.18;
-        color       : white;
-        top         : 40px;
-        text-align  : center;
-      }
-    }
+    .image-callout { width : 770px; }
   }
 
   .mission {
