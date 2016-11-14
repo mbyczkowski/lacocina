@@ -1,0 +1,84 @@
+.incubator-page {
+  .hero {
+    .image-callout { width : 960px; }
+  }
+
+  h2 {
+    font-size   : 28px;
+    font-weight : bold;
+    color: #333333;
+  }
+
+  a:not(.button) { color: $dark-sky-blue; }
+
+  .incubator-program {
+    h3 {
+      font-size      : 20px;
+      font-weight    : 600;
+      color          : #333333;
+      text-transform : none;
+    }
+
+    .title {
+      font-weight    : 600;
+      text-transform : uppercase;
+    }
+
+    .description { padding : 0 20px; }
+  }
+
+  .qualification-criteria {
+    position         : relative;
+    background-color : black;
+    color            : white;
+    padding          : 35px 0;
+    margin           : 35px 0 60px;
+
+    h2 { color: white; }
+
+    .subheader {
+      font-size   : 20px;
+      font-weight : 600;
+      color       : white;
+    }
+
+    h3 {
+      color       : $copper;
+      font-size   : 20px;
+      font-weight : 600;
+    }
+
+    li {
+      display : inline-block;
+      &:before {
+        content : "•";
+        padding-right : 6px;
+      }
+    }
+
+    &:after {
+      content          : "";
+      position         : absolute;
+      top              : 0;
+      left             : 0;
+      height           : 100%;
+      width            : 100%;
+      background-image : asset-url('incubator/criteria.jpg');
+      background-size  : cover;
+      opacity          : .2;
+    }
+  }
+
+  .steps {
+    .step {
+      .title {
+        font-size      : 20px;
+        font-weight    : bold;
+        color          : $merlot;
+        text-transform : uppercase;
+      }
+
+      strong { font-weight: bold; }
+    }
+  }
+}

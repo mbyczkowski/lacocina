@@ -52,15 +52,3 @@
 //
 @include motion-ui-transitions;
 @include motion-ui-animations;
-
-.button {
-  padding : 0.591em 1em;
-}
-
-.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
-  content    : '›';
-  font-size  : 14px;
-  border     : none;
-  margin-top : 0;
-  transform  : rotate(90deg) scaleY(1.4);
-}

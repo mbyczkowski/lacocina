@@ -48,20 +48,13 @@
     position : relative;
 
     .image-callout {
-      position  : absolute;
-      bottom    : -51px;
-      left      : 50%;
-      transform : translateX(-50%);
 
       .text {
-        position    : absolute;
-        font-family : Raleway;
-        font-weight : 300;
-        color       : white;
-        top         : 40px;
-        text-align  : center;
-        left        : 50%;
-        transform   : translateX(-50%);
+        font-family    : Raleway;
+        text-transform : none;
+        top            : 40px;
+        left           : 50%;
+        transform      : translateX(-50%);
 
         .header {
           font-size   : 44px;
@@ -242,14 +235,6 @@
     &:hover {
       color: $copper;
       border-color: $copper;
-    }
-  }
-
-  .businesses {
-    img {
-      height: 5rem;
-      width: 5rem;
-      margin: 1rem;
     }
   }
 

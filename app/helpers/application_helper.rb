@@ -213,7 +213,7 @@ module ApplicationHelper
         submenu: [
           {
             name: 'Learn More & Apply',
-            url: '/coming_soon'
+            url: '/incubator'
           },
           {
             name: 'Resources For Business Owners',

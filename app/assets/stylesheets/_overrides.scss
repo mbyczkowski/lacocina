@@ -1,14 +1,24 @@
 @import 'settings';
 
 .button {
-  text-transform: uppercase;
-  font-weight: 900;
+  text-transform : uppercase;
+  font-weight    : 900;
+  padding        : 0.591em 1em;
+
   &.wide {
     width: 450px;
   }
   &.skinny {
     padding: 6px 12px;
   }
+}
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+  content    : '›';
+  font-size  : 14px;
+  border     : none;
+  margin-top : 0;
+  transform  : rotate(90deg) scaleY(1.4);
 }
 
 h1, h2, h3, h4, h5, h6 {
