@@ -1,6 +1,7 @@
 {
   "name": "lacocina",
   "scripts": {
+    "postdeploy": "bundle exec rake db:migrate db:seed"
   },
   "env": {
     "GA_KEY": {
