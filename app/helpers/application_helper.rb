@@ -26,7 +26,7 @@ module ApplicationHelper
       {
         name: 'youtube',
         icon: 'youtube.svg',
-        link: 'https://youtube.com/'
+        link: 'https://youtube.com/user/LaCocinaSForg'
       }
     ]
   end
