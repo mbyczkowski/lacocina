@@ -1,55 +1,49 @@
-.row.catering-banner
-  .image
-    = responsive_image_tag 'catering.jpg'
-    .caption
-      %h1 Catering
+.catering-page
+  .hero
+    .image-callout
+      = image_tag "catering/rectangle.svg"
+      .text Cater with us
+    = responsive_image_tag "catering/catering.jpg"
 
-.row.catering-info
-  .large-9.large-centered.columns.text-center
-    %h1 Catering
-    %p
-      Our program connects individual catering businesses with you, the client. We’ve done everything from intimate dinner parties (think Lady and the Tramp) to weddings and corporate receptions. Whatever it is that you need, we can do it.
+  .row.page-info
+    .large-11.large-centered.columns.text-center
+      %h2.section-header Catering
+      %p Our program connects individual catering businesses with you, the client. We’ve done everything from intimate dinner parties (think Lady and the Tramp) to weddings and corporate receptions. Whatever it is that you need, we can do it.
 
-    %small
-      Fun Fact: All the food is incredibly delicious.
+  .row.catering-info
+    .large-11.large-centered.columns.text-center
+      %h2 Fun Fact: All the food is incredibly delicious.
+      %p So, without further ado, you will find more information about our caterers and the food they are able to provide listed below. Still have questions? Click on our FAQs page to learn more. If you are ready to book, fill out our quick and easy form and a La Cocina representative will be in touch.
 
-    %p
+      %h2 Thanks for your interest and we look forward to catering your upcoming meal!
+      .action-bar
+        = link_to "Contact us", "mailto:lisa@lacocinasf.org", { target: "_blank", class: "button hollow" }
+        = link_to "Fill the Catering Form", "https://docs.google.com/a/lacocinasf.org/spreadsheet/viewform?formkey=cjBLLVFCWHg4TVJrVkcxS0NHem1XeFE6MA..", { target: "_blank", class: "button" }
 
-    %p
-      So, without further ado, you will find more information about our caterers and the food they are able to provide listed below. Still have questions? Click on our FAQs page to learn more. If you are ready to book, fill out our quick and easy form and a La Cocina representative will be in touch.
+  .row.text-center.caterers
+    %h2.section-header Our Businesses that offer Catering
+    = render partial: "partials/businesses", locals: { businesses: businesses_with_catering }
 
-    %p
-      Thanks for your interest and we look forward to catering your upcoming meal!
+  .row.questions
+    .large-11.large-centered.columns.text-center
+      %h2.section-header Frequently asked questions
 
-.row
-  .large-5.large-centered.columns
-    = link_to 'Contact us', '#', class: 'button'
-    = link_to 'Fill the Catering Request Form', 'https://docs.google.com/a/lacocinasf.org/spreadsheet/viewform?formkey=cjBLLVFCWHg4TVJrVkcxS0NHem1XeFE6MA..', class: 'button'
-
-.row.text-center.caterers
-  %h2.copper Our Businesses that offer Catering
-  = render partial: 'partials/businesses', locals: { businesses: businesses_with_catering }
-.row
-  .large-12.large-centered.columns.text-center
-    %h2.copper Frequently asked questions
-    %ul.accordion{'data-accordion': true, 'data-multi-expand': true}
       %li
-        = link_to '1. I’ve heard so many great things about your organization. Can La Cocina cater my party?', '#', class: 'accordion-title'
-        .accordion-content{'data-tab-content': true}
-          %p
-            Well, we just can’t wait to meet you. To be clear, however, La Cocina is not a caterer.  We are a nonprofit culinary business incubator working with low income women and immigrant food businesses to transition from the informal economy to a formal business.  For many of the businesses, catering is an essential component of their start-up business model, and we do our best to connect those talented entrepreneurs to you… the consumer!
+        .question I’ve heard so many great things about your organization. Can La Cocina cater my party?
+
+        .answer Well, we just can’t wait to meet you. To be clear, however, La Cocina is not a caterer.  We are a nonprofit culinary business incubator working with low income women and immigrant food businesses to transition from the informal economy to a formal business.  For many of the businesses, catering is an essential component of their start-up business model, and we do our best to connect those talented entrepreneurs to you… the consumer!
+
       %li
-        = link_to '2. We are a non-profit and love what La Cocina does.  We’re throwing a fundraiser for our organization and thought it would be a great pairing if you or one of your businesses could cater our event.  Since we’re a nonprofit we have little to no budget.  Can you donate food or give it to us at a very low cost?', '#', class: 'accordion-title'
-        .accordion-content{'data-tab-content': true}
-          %p
-            While La Cocina is a nonprofit, all of the businesses in our program are for-profit businesses trying to start up their businesses with virtually no resources.  Many of our businesses like to support social causes, but as low income entrepreneurs with limited resources, their costs and margins are different from large catering companies that buy in bulk and have large numbers of staff.  They cannot compete on price structure with some of these companies.  Every one of the businesses here will give back as soon as they can afford it. Until then, we hope to work with you but also hope that you understand that in order for these businesses to succeed they can only take events wherein they have a chance of profit. We apologize for not being able to fill your needs and hope you consider La Cocina for future events.
+        .question We are a non-profit and love what La Cocina does.  We’re throwing a fundraiser for our organization and thought it would be a great pairing if you or one of your businesses could cater our event.  Since we’re a nonprofit we have little to no budget.  Can you donate food or give it to us at a very low cost?
+
+        .answer While La Cocina is a nonprofit, all of the businesses in our program are for-profit businesses trying to start up their businesses with virtually no resources.  Many of our businesses like to support social causes, but as low income entrepreneurs with limited resources, their costs and margins are different from large catering companies that buy in bulk and have large numbers of staff.  They cannot compete on price structure with some of these companies.  Every one of the businesses here will give back as soon as they can afford it. Until then, we hope to work with you but also hope that you understand that in order for these businesses to succeed they can only take events wherein they have a chance of profit. We apologize for not being able to fill your needs and hope you consider La Cocina for future events.
+
       %li
-        = link_to '3. We’re having an event and thought it would be great if you could send 4 or 5 food trucks down so our guests could order food. I know you guys throw the San Francisco Street Food Festival so I’m sure you have lots of foods trucks you could send us.', '#', class: 'accordion-title'
-        .accordion-content{'data-tab-content': true}
-          %p
-            Currently none of the businesses in our incubator program have food trucks.  We have three businesses with mobile food trailers/carts, and have two more mobile foods businesses getting ready to launch.  Generally it’s a good rule of thumb to have one mobile food vendor for every 75 to 100 people.  It’s unrealistic to have an event for 100-200 people and expect to have 4 or 5 food trucks.  The businesses cannot participate in an event of this size without losing money.  Generally to have a food truck cater an event you will need to set a minimum sale amount.
+        .question We’re having an event and thought it would be great if you could send 4 or 5 food trucks down so our guests could order food. I know you guys throw the San Francisco Street Food Festival so I’m sure you have lots of foods trucks you could send us.
+
+        .answer Currently none of the businesses in our incubator program have food trucks.  We have three businesses with mobile food trailers/carts, and have two more mobile foods businesses getting ready to launch.  Generally it’s a good rule of thumb to have one mobile food vendor for every 75 to 100 people.  It’s unrealistic to have an event for 100-200 people and expect to have 4 or 5 food trucks.  The businesses cannot participate in an event of this size without losing money.  Generally to have a food truck cater an event you will need to set a minimum sale amount.
+
       %li
-        = link_to '4. I’m a little confused with how your catering process works. Do I need to fill out the catering request form? Someone recommended El Huarache Loco. Can I reach out to them directly or do I need to contact you first?', '#', class: 'accordion-title'
-        .accordion-content{'data-tab-content': true}
-          %p
-            If you are looking to work with a particular business in our incubator program, feel free to reach out to them directly.  They will be glad to assist you with your catering needs.  If you’re not sure what you’re looking for or if you want to receive menus/bids from more than one company, then the best thing to do is fill our the catering request for on our website.
+        .question I’m a little confused with how your catering process works. Do I need to fill out the catering request form? Someone recommended El Huarache Loco. Can I reach out to them directly or do I need to contact you first?"
+
+        .answer If you are looking to work with a particular business in our incubator program, feel free to reach out to them directly.  They will be glad to assist you with your catering needs.  If you’re not sure what you’re looking for or if you want to receive menus/bids from more than one company, then the best thing to do is fill our the catering request for on our website.

@@ -28,6 +28,13 @@
 
 @font-face {
   font-family: 'Raleway';
+  src: font-url('Raleway-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
   src: font-url('Raleway-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;

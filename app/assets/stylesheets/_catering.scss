@@ -1,91 +1,86 @@
 @import 'settings';
 
-.catering-banner{
-	.image {
-		position: relative;
-	  	width: 100%;
+.catering-page {
 
-		.caption {
-	    	position: absolute;
-	   		bottom: 0;
-	    	text-align: right;
-	    	width: 100%;
-	    	background-color: transparent;
-	    	color: #fff;
-				padding: 2%;
-	  	}
+	.hero {
+		.image-callout { width : 582px; }
 	}
 
-	.caption {
-	 	h1 {
-	   		font-size: 4rem;
-	    	color: #fff;
-	    	letter-spacing: 1px;
-	    	line-height: 0.9;
-	    	text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
-			  margin: 0;
-	  	}
+	.section-header {
+		font-size   : 28px;
+    font-weight : bold;
+    color       : $charcoal-gray;
+    margin-top  : 50px;
+	}
 
-		@include breakpoint(small only) {
-			h1 {
-	    		font-size: 1.5rem;
-	   		}
+	.page-info {
+		p {
+			color         : $charcoal-gray;
+			font-size     : 20px;
+			line-height   : 1.5;
+			margin-bottom : 75px;
+	 	}
+	}
+
+	.catering-info {
+		h2 {
+			color          : $merlot;
+			font-size      : 36px;
+		  font-weight    : 300;
+		  text-transform : none;
+		}
+
+		p {
+			color         : $charcoal-gray;
+			font-size     : 20px;
+			line-height   : 1.5;
+			margin-bottom : 75px;
+		}
+
+		.action-bar {
+			display    : inline-block;
+			margin-top : 20px;
+
+			.button {
+				width  : 250px;
+				margin : 0 10px;
+			}
 		}
 	}
-}
 
+	.caterers {
+		.businesses {
+			display : inline-block;
 
-.catering-info{
-	.large-9.columns {
-		font-size: 20px;
-		font-weight: 500;
-		line-height: 1.5;
-		color: $dark-gray;
-	}
+			.float-left {
+				padding : 0 80px;
 
-	h2 {
-		color: $copper;
-	}
-
-	small {
-		color: $merlot;
-		font-weight: bold;
-		font-size: 20px;
-	}
-
-	p {
-		color: $charcoal-gray;
-		font-size: 15px;
-		line-height: 1.6;
-	}
-}
-
-.businesses {
-  img {
-    height: 5rem;
-    width: 5rem;
-    margin: 1rem;
-  }
-}
-
-
-.caterers {
-	h2 {
-		color: $copper;
-	}
-	ul {
-		list-style: none;
-
-		a {
-			color: $dark-sky-blue;
-			font-weight: bold;
-
-			&:visited {
-      			color: $dark-sky-blue;
-    		}
-    		&:hover {
-    			color: $mid-blue;
+				&:nth-child(odd) {
+					clear: both!important;
+				}
 			}
+		}
+	}
+
+	.questions {
+		margin-bottom : 300px;
+
+		li { list-style-type: none; }
+
+		.question {
+			color       : $merlot;
+			font-size   : 20px;
+		  font-weight : 500;
+		  margin      : 30px 0 10px;
+
+		  &:before {
+		  	content : "Q: ";
+		  }
+		}
+
+		.answer {
+			font-size: 15px;
+		  font-weight: 500;
 		}
 	}
 }
