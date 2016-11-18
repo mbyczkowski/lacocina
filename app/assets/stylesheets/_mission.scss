@@ -1,107 +1,89 @@
 @import 'settings';
 
-.quote {
-    font-size: 2.2rem;
-    line-height: 3rem;
-    font-weight: 300;
-    p {
-        color: $charcoal-gray;
-    }
-    a {
-        color: $dark-sky-blue;
-    }
-}
-
-.mission-banner{
-	.image {
-		position : relative;
-  	width    : 100%;
-
-		.caption {
-	    	position         : absolute;
-	   		bottom           : 0;
-	    	text-align       : right;
-	    	width            : 100%;
-	    	background-color : transparent;
-	    	color            : #fff;
-				padding          : 2%;
-	  	}
-	}
-
-	.caption {
-	 	h1 {
-	   		font-size: 4rem;
-	    	color: #fff;
-	    	letter-spacing: 1px;
-	    	line-height: 0.9;
-	    	text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
-			  margin: 0;
-	  	}
-
-		@include breakpoint(small only) {
-			h1 {
-	    		font-size: 1.5rem;
-	   		}
-		}
-	}
-}
-
-
-.mission-statement {
-	.large-8.columns {
-		font-size: 20px;
-		font-weight: 500;
-		line-height: 1.5;
-		color: $dark-gray;
-	}
-
-	h2 {
-		color: $copper;
-	}
-
-	small {
-		color: $charcoal-gray;
-		font-weight: bold;
-		font-size: 20px;
+.mission-page {
+	h1 {
+		color          : #333;
+		line-height    : 2;
+		letter-spacing : 0.6px;
+		font-size      : 28px;
+		font-weight    : bold;
 	}
 
 	p {
-		color: $charcoal-gray;
-		font-size: 15px;
-		line-height: 1.6;
+		padding : 0 20px;
 	}
-}
 
-.mission-stats {
-	.large-4.columns {
-		h1 {
-			line-height: 1.1;
+	.quote {
+	    font-size   : 36px;
+	    line-height : 49px;
+	    font-weight : 300;
+	    p {
+	        color: $charcoal-gray;
+	    }
+	    a {
+	        color: $dark-sky-blue;
+	    }
+	}
+
+	.video { width : 410px; }
+
+	.story {
+		position         : relative;
+    background-color : black;
+    color            : white;
+		padding          : 35px 0;
+    margin           : 35px 0 60px;
+
+    h1 { color : white; }
+
+    .row > *:not(.sub-title) { padding : 0 45px; }
+
+		.sub-title {
+			border-top    : 1px solid $green;
+			border-bottom : 1px solid $green;
+			font-size     : 20px;
+		  font-weight   : 600;
+		  padding       : 20px 45px;
+		  margin        : 0 0 20px;
+
+		  p { margin-bottom: 0; }
 		}
 
-		h3 {
-			font-weight: 100;
-			text-transform: none;
-			line-height: 1.1;
-		}
+		&:after {
+      content          : "";
+      position         : absolute;
+      top              : 0;
+      left             : 0;
+      height           : 100%;
+      width            : 100%;
+      background-image : asset-url('mission/story.jpg');
+      background-size  : cover;
+      opacity          : .2;
+    }
 	}
-}
 
-.supporters {
-	h2 {
-		color: $copper;
+	.family {
+		border-color   : $merlot;
+		border-bottom  : 1px solid;
+		border-top     : 1px solid;
+		padding-top    : 20px;
+		padding-bottom : 20px;
 	}
-	ul {
-		list-style: none;
 
-		a {
-			color: $dark-sky-blue;
-			font-weight: bold;
+	.supporters {
+		margin-bottom: 180px;
 
-			&:visited {
-      			color: $dark-sky-blue;
-    		}
-    		&:hover {
-    			color: $mid-blue;
+		h2 { color: $copper; }
+		ul {
+			list-style: none;
+
+			a {
+				color: $dark-sky-blue;
+				font-weight: bold;
+				font-size: 15px;
+
+				&:visited { color: $dark-sky-blue; }
+    		&:hover   { color: $mid-blue; }
 			}
 		}
 	}
