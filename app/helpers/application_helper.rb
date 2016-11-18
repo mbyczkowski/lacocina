@@ -218,11 +218,11 @@ module ApplicationHelper
           {
             name: 'Learn More & Apply',
             url: '/incubator'
-          },
-          {
-            name: 'Resources For Business Owners',
-            url: '/coming_soon'
           }
+          # {
+          #   name: 'Resources For Business Owners',
+          #   url: '/coming_soon'
+          # }
         ]
       },
       {
