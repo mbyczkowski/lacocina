@@ -50,12 +50,16 @@
       = render partial: 'partials/pie_chart', locals: { percentage: "91", caption: "People of color" }
 
 
-  .row
+  .row.text-center
     %h2 FIND OUR BUSINESSES AROUND YOU
+    .image.hide-for-medium
+      = link_to 'http://www.google.com/maps/d/embed?mid=1OcGetCOiKBlGyYudjmBuRQSnOC0', class: 'map-link' do
+        = responsive_image_tag 'map.png'
+    .image.show-for-medium
+      = responsive_image_tag 'map.png'
+      .large-4.large-offset-4.columns.overlay.bottom-center
+        = link_to 'View our businesses on the map', 'http://www.google.com/maps/d/embed?mid=1OcGetCOiKBlGyYudjmBuRQSnOC0', class: 'expanded button skinny', target: '_blank'
 
-
-  .map
-    %iframe{src: "https://www.google.com/maps/d/embed?mid=1OcGetCOiKBlGyYudjmBuRQSnOC0", style: "height:300px;width:100%;"}
 
   .row.text-center
     %h2.secondary Our Businesses
