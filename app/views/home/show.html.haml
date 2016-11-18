@@ -1,12 +1,14 @@
 .homepage
   .hero
     .image-callout
-      = image_tag "combined-shape-homepage.svg"
+      = image_tag "home/rectangle.svg"
       .text
         .responsive-typography.h1 La Cocina
         .sub-header.responsive-typography.h3 Cultivating food entrepreneurs
-        .cta= link_to 'Donate', '/donate', class: 'hollow dark-background button responsive'
-    = responsive_image_tag 'home.jpg'
+        .cta
+          = link_to 'Donate Once', '/donate', class: 'hollow dark-background button responsive'
+          = link_to 'Donate Monthly', '/donate_monthly', class: 'hollow dark-background button responsive'
+    = responsive_image_tag 'home/home.jpg'
 
   .row.call-to-action-boxes
     .medium-4.columns.text-center
@@ -26,7 +28,7 @@
       = link_to 'Buy a gift box', 'https://la-cocina-sf-store.myshopify.com', class: 'button'
 
   .story-banner.testimonial.show-for-medium
-    = responsive_image_tag "bini.jpg"
+    = responsive_image_tag "home/bini.jpg"
     .text
       .quote.responsive-typography.h3 "I thank god every day for La Cocina... but it was momos that saved my life."
       .responsive-typography.h4 Binita Pradhan, Bini's Kitchen
