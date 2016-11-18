@@ -45,29 +45,28 @@
   }
 
   .hero {
-    position : relative;
-
-    .image-callout {
-
+    @include breakpoint(small only) {
       .text {
-        font-family    : Raleway;
-        text-transform : none;
-        top            : 40px;
-        left           : 50%;
-        transform      : translateX(-50%);
-
-        .header {
-          font-size   : 44px;
-          line-height : 45px;
+        transform: translateY(-40%);
+        .cta {
+          margin-top: 0;
         }
+      }
+    }
+    .text {
+      .responsive-typography.h1 {
+        font-size: 4vw;
+      }
+      .responsive-typography.h3 {
+        font-size: 2vw;
+      }
 
-        .sub-header {
-          font-size   : 36px;
-          line-height : 45px;
-          white-space : nowrap;
-        }
+      .sub-header {
+        white-space : nowrap;
+      }
 
-        .cta { margin-top : 30px; }
+      .cta {
+        margin-top : 1.2vw;
       }
     }
   }
@@ -82,24 +81,13 @@
       top          : 0;
       right        : 0;
       bottom       : 0;
-      margin-right : 85px;
-      margin-top   : 80px;
       font-family  : Raleway;
       font-weight  : 300;
       text-align   : center;
       color        : #333;
-      line-height  : 49px;
-
-      .quote {
-        font-size     : 36px;
-        width         : 765px;
-        margin-bottom : 20px;
-      }
-
-      .author {
-        line-height : 58px;
-        font-size   : 25px;
-      }
+      line-height  : 5vw;
+      width        : 55vw;
+      margin       : 4vw 4vw;
     }
   }
 

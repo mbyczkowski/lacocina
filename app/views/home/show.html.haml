@@ -3,9 +3,9 @@
     .image-callout
       = image_tag "combined-shape-homepage.svg"
       .text
-        .header La Cocina
-        .sub-header Cultivating food entrepreneurs
-        .cta= link_to 'Donate', '/donate', class: 'hollow dark-background button'
+        .responsive-typography.h1 La Cocina
+        .sub-header.responsive-typography.h3 Cultivating food entrepreneurs
+        .cta= link_to 'Donate', '/donate', class: 'hollow dark-background button responsive'
     = responsive_image_tag 'home.jpg'
 
   .row.call-to-action-boxes
@@ -25,11 +25,11 @@
       %p Make a difference.
       = link_to 'Buy a gift box', 'https://la-cocina-sf-store.myshopify.com', class: 'button'
 
-  .story-banner.testimonial
+  .story-banner.testimonial.show-for-medium
     = responsive_image_tag "bini.jpg"
     .text
-      .quote "I thank god every day for La Cocina... but it was momos that saved my life."
-      .author Binita Pradhan, Bini's Kitchen
+      .quote.responsive-typography.h3 "I thank god every day for La Cocina... but it was momos that saved my life."
+      .responsive-typography.h4 Binita Pradhan, Bini's Kitchen
       .cta= link_to "READ BINITA’S STORY", "http://www.sfgate.com/food/eatup/article/Bini-s-Kitchen-cooks-up-Nepalese-charm-in-6738213.php", class: "hollow button", target: "_blank"
 
   .row.who-we-work-with

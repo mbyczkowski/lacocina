@@ -11,6 +11,11 @@
   &.skinny {
     padding: 6px 12px;
   }
+  &.responsive {
+    min-height: 26px;
+    font-size: 1.8vw;
+    padding: 1vw 1em;
+  }
 }
 
 .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
@@ -115,4 +120,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .body-10 {
   padding: 0 10% 0 10%;
+}
+
+.responsive-typography {
+    &.h1 {
+        font-size: 5vw;
+    }
+    &.h3 {
+        font-size: 3vw;
+    }
+    &.h4 {
+        font-size: 2vw;
+    }
 }
