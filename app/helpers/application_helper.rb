@@ -190,8 +190,12 @@ module ApplicationHelper
         url: '#',
         submenu: [
           {
-            name: 'Donate',
+            name: 'Donate Once',
             url: '/donate'
+          },
+          {
+            name: 'Donate Monthly',
+            url: '/donate_monthly'
           },
           {
             name: 'Volunteer',

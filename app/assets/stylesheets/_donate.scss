@@ -10,8 +10,73 @@
   }
 
   .hero {
-    .text.responsive-typography {
-      font-size: 2.5vw;
+    .image-callout              { bottom: 70px;     }
+    .text.responsive-typography { font-size: 2.5vw; }
+  }
+
+  .membership-cta {
+    background : $green;
+    text-align : center;
+    padding    : 20px;
+
+    h2 {
+      color         : white;
+      margin-bottom : -8px;
+      font-size     : 28px;
+      font-weight   : bold;
+    }
+
+    .button {
+      color         : white;
+      border-color  : white;
+      margin-bottom : 0;
+    }
+  }
+
+  .membership-choices {
+    position       : relative;
+    color          : white;
+    background     : black;
+    padding-bottom : 66px;
+    padding-top    : 15px;
+
+    h2 {
+      color       : white;
+      font-size   : 28px;
+      font-weight : bold;
+    }
+
+    .option {
+      border  : 1px solid $green;
+      padding : 20px 15px;
+      height  : 338px;
+      width   : 360px;
+
+      .title {
+        color         : $green;
+        border-bottom : 1px solid $green;
+        font-weight   : bold;
+        font-size     : 26px;
+        margin-bottom : 6px;
+      }
+
+      p {
+        font-size   : 15px;
+        font-weight : 600;
+        line-height : 1.8;
+      }
+    }
+
+    &:after {
+      content          : "";
+      position         : absolute;
+      top              : 0;
+      left             : 0;
+      height           : 100%;
+      width            : 100%;
+      background-image : asset-url('donate_monthly/veg.jpg');
+      background-size  : cover;
+      opacity          : .2;
     }
   }
 
@@ -49,6 +114,13 @@
       margin: 4vw 4vw;
     }
   }
+
+  &.monthly .testimonial {
+      .text {
+        left : 0;
+        margin-left: 85px;
+      }
+    }
 
   .support {
     width  : 1085px;
