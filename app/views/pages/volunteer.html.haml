@@ -1,47 +1,52 @@
-.row
-  = responsive_image_tag 'volunteer.jpg'
+.volunteer-page.text-center
+  .hero
+    .image-callout
+      = image_tag "mission/rectangle.svg"
+      .text
+        .responsive-typography.h2 Volunteer Program
 
-.body-10
-  .row.text-center
-    %h1 Volunteer Program
-    %p
-      We love our volunteers, and we know that we would be lost without them. There are lots of volunteer opportunities at La Cocina, and, more than anything, we
-      believe in building a community between our staff, program participants and volunteers. Read on for information on the volunteer program, and please feel free to
-      be in touch if you have any questions at all. To join our volunteer program, please begin with
-      = succeed '.' do
-        = link_to 'this simple form', 'http://www.formstack.com/forms/?1450715-t3fVu26w1f'
-    %p
-      La Cocina’s volunteer program can essentially be divided into three parts; technical assistance providers, mentors and general volunteers . Some volunteers will fill
-      all roles, but the role you fill will largely depend on how you would like to interact with the program and personal time constraints. Additionally, qualified volunteers
-      may be asked to join our advisory committee, responsible for the interview process for applicant businesses.
+    = responsive_image_tag 'volunteer.jpg'
+  .body-10
+    .row.text-center
+      %h1 Volunteer Program
+      %p
+        We love our volunteers, and we know that we would be lost without them. There are lots of volunteer opportunities at La Cocina, and, more than anything, we
+        believe in building a community between our staff, program participants and volunteers. Read on for information on the volunteer program, and please feel free to
+        be in touch if you have any questions at all. To join our volunteer program, please begin with
+        = succeed '.' do
+          = link_to 'this simple form', 'http://www.formstack.com/forms/?1450715-t3fVu26w1f'
+      %p
+        La Cocina’s volunteer program can essentially be divided into three parts; technical assistance providers, mentors and general volunteers . Some volunteers will fill
+        all roles, but the role you fill will largely depend on how you would like to interact with the program and personal time constraints. Additionally, qualified volunteers
+        may be asked to join our advisory committee, responsible for the interview process for applicant businesses.
 
-    %h2.copper Technical Assistance Provider
-    %p
-      Technical assistance providers will offer industry- specific assistance in areas of expertise. Examples may include tax preparation, graphic design, recipe costing,
-      branding and so more. These volunteers provide services at their convenience, and La Cocina will match program participants with these providers when the
-      services are offered.
-    %p
-      We have found that one-on-one interaction often yields the greatest rewards, though we also welcome any workshops or activities that might be better executed in
-      a group.
+      %h2.copper Technical Assistance Provider
+      %p
+        Technical assistance providers will offer industry- specific assistance in areas of expertise. Examples may include tax preparation, graphic design, recipe costing,
+        branding and so more. These volunteers provide services at their convenience, and La Cocina will match program participants with these providers when the
+        services are offered.
+      %p
+        We have found that one-on-one interaction often yields the greatest rewards, though we also welcome any workshops or activities that might be better executed in
+        a group.
 
-    %h2.copper Mentors
-    %p
-      Mentors are paired with a specific program participant in order to target development in a localized area of need. Mentors will address macro-issues like marketing,
-      business planning and general emotional support for new entrepreneurs. These volunteers will schedule their own meetings with program participants, and will
-      report back to La Cocina staff regularly.
+      %h2.copper Mentors
+      %p
+        Mentors are paired with a specific program participant in order to target development in a localized area of need. Mentors will address macro-issues like marketing,
+        business planning and general emotional support for new entrepreneurs. These volunteers will schedule their own meetings with program participants, and will
+        report back to La Cocina staff regularly.
 
-    %h2.copper General Volunteers
-    %p
-      General volunteers work with La Cocina staff on events, farmer’s market, administration, fundraising and more. We love our volunteers, so come spend some time
-      with us!
+      %h2.copper General Volunteers
+      %p
+        General volunteers work with La Cocina staff on events, farmer’s market, administration, fundraising and more. We love our volunteers, so come spend some time
+        with us!
 
-    %h2.copper Advisory Committee
-    %p
-      The La Cocina Advisory Committee consists of a hand-selected group of industry insiders who have been chosen to lend their expertise in the incubation of La
-      Cocina program participants. You have been chosen because of your dedication to the La Cocina project and because of your valuable industry knowledge. The
-      committee set-up will allow La Cocina staff to integrate your opinions, suggestions and advice into the program in a way that maximizes your impact and minimizes
-      the time commitment that individual businesses might put on you.
+      %h2.copper Advisory Committee
+      %p
+        The La Cocina Advisory Committee consists of a hand-selected group of industry insiders who have been chosen to lend their expertise in the incubation of La
+        Cocina program participants. You have been chosen because of your dedication to the La Cocina project and because of your valuable industry knowledge. The
+        committee set-up will allow La Cocina staff to integrate your opinions, suggestions and advice into the program in a way that maximizes your impact and minimizes
+        the time commitment that individual businesses might put on you.
 
-  .row.text-center
-    = link_to 'Contact Us For More Information', 'mailto:volunteer@lacocinasf.org', class: 'hollow button skinny'
-    = link_to 'Fill The Volunteer Form', 'http://www.formstack.com/forms/?1450715-t3fVu26w1f', class: 'button skinny'
+    .row.text-center
+      = link_to 'Contact Us For More Information', 'mailto:volunteer@lacocinasf.org', class: 'hollow button skinny'
+      = link_to 'Fill The Volunteer Form', 'http://www.formstack.com/forms/?1450715-t3fVu26w1f', class: 'button skinny'
