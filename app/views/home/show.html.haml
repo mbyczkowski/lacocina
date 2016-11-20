@@ -52,7 +52,7 @@
       = render partial: 'partials/pie_chart', locals: { percentage: "91", caption: "People of color" }
 
 
-  .row.text-center
+  .text-center
     %h2 FIND OUR BUSINESSES AROUND YOU
     .image.hide-for-medium
       = link_to 'http://www.google.com/maps/d/embed?mid=1OcGetCOiKBlGyYudjmBuRQSnOC0', class: 'map-link' do
@@ -66,4 +66,3 @@
   .row.text-center
     %h2.secondary Our Businesses
     = render partial: 'partials/businesses', locals: { businesses: featured_businesses }
-
