@@ -13,6 +13,7 @@ class BusinessDashboard < Administrate::BaseDashboard
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
     name: Field::String,
+    description: Field::String,
     website_url: Field::String,
     offers_catering: Field::Boolean,
   }.freeze
@@ -37,6 +38,7 @@ class BusinessDashboard < Administrate::BaseDashboard
     :created_at,
     :updated_at,
     :name,
+    :description,
     :slug,
     :website_url,
     :offers_catering,
@@ -47,6 +49,7 @@ class BusinessDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
     :name,
+    :description,
     :offers_catering,
     :website_url,
   ].freeze
