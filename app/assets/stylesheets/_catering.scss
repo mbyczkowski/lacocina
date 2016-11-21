@@ -3,7 +3,10 @@
 .catering-page {
 
 	.hero {
-		.image-callout { width : 582px; }
+		.image-callout {
+			width : 41vw;
+			.text { font-size: 3vw; }
+		}
 	}
 
 	.section-header {
