@@ -2,6 +2,8 @@ require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
 
+require_relative '../lib/sabayon_middleware.rb'
+
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
@@ -24,5 +26,9 @@ module Lacocina
     config.active_record.raise_in_transactional_callbacks = true
 
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
+
+    # Ensure that SSL certs are set-up
+    # Based on https://github.com/dmathieu/sabayon
+    config.middleware.insert_before 0, SabayonMiddleware
   end
 end
