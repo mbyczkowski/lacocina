@@ -43,6 +43,9 @@ gem 'inline_svg'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# Use appsignal for collecting error and perf info
+gem 'appsignal'
+
 # Use Puma as the app server
 gem 'puma'
 
