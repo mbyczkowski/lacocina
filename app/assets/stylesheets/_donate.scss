@@ -14,6 +14,14 @@
     .text.responsive-typography { font-size: 2.5vw; }
   }
 
+  &.monthly {
+    @include breakpoint(small only) {
+      .image-callout {
+        bottom : 10px;
+      }
+    }
+  }
+
   .membership-cta {
     background : $green;
     text-align : center;
