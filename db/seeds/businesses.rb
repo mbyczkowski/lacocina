@@ -5,6 +5,7 @@ businesses = [
     name: "A Girl Named Pinky",
     website_url: "https://www.facebook.com/AGirlNamedPinky/",
     offers_catering: true,
+    logo_url: "a_girl_named_pinky.png",
     description: "Bakery specializing in Custom Cakes"
   },
   {
@@ -18,12 +19,14 @@ businesses = [
     name: "Alicia's Tamales los Mayas",
     website_url: "http://www.aliciatamaleslosmayas.com/",
     offers_catering: true,
+    logo_url: "alicia_tameles.png",
     description: "Tamales Stuffed with Love"
   },
   {
     name: "Azalina's",
     website_url: "http://www.azalinas.com/",
     offers_catering: true,
+    logo_url: "azalinas.png",
     description: "Malaysian"
   },
   {
@@ -43,12 +46,14 @@ businesses = [
     name: "Chaac Mool",
     website_url: "https://www.facebook.com/ChaacMoolSF/",
     offers_catering: false,
+    logo_url: "chaac_mool.png",
     description: "Yucatecan Specialties"
   },
   {
     name: "Clairesquares",
     website_url: "http://www.clairesquares.com/",
     offers_catering: false,
+    logo_url: "claire_squares.png",
     description: "Irish Shortbread Squares"
   },
   {
@@ -83,6 +88,7 @@ businesses = [
     name: "El Huarache Loco",
     website_url: "http://www.huaracheloco.com/",
     offers_catering: true,
+    logo_url: "el_huarache_loco.png",
     description: "Mexican Restaurant focused on Mexico City Street Foods"
   },
   {
@@ -102,6 +108,7 @@ businesses = [
     name: "Endless Summer Sweets",
     website_url: "http://endlesssummersweets.com/",
     offers_catering: true,
+    logo_url: "endless_summer.png",
     description: "Carnaval Food for Kids of All Ages"
   },
   {
@@ -115,24 +122,28 @@ businesses = [
     name: "Hella Vegan Eats",
     website_url: "http://hellaveganeats.com/",
     offers_catering: true,
+    logo_url: "hella_vegan_eats.png",
     description: "Festive Vegan Cuisine"
   },
   {
     name: "Inticing Creations",
     website_url: "http://www.inticingcreations.com/",
     offers_catering: false,
+    logo_url: "inticing_creations.png",
     description: "Custom Wedding and Occasion Cakes"
   },
   {
     name: "Kaleidoscope",
     website_url: "http://kaleidoscope-foods.myshopify.com/",
     offers_catering: false,
+    logo_url: "kaleidoscope_foods.png",
     description: "Kale Chips"
   },
   {
     name: "Kika's Treats",
     website_url: "http://kikastreats.com/",
     offers_catering: false,
+    logo_url: "kikas_treats.png",
     description: "Artisanal Chocolate Covered Treats"
   },
   {
@@ -146,12 +157,14 @@ businesses = [
     name: "Los Cilantros",
     website_url: "http://loscilantrosrestaurant.com/",
     offers_catering: true,
+    logo_url: "los_cilantros.png",
     description: "Mexican Restaurant focused on local sourcing"
   },
   {
     name: "Love & Hummus Co.",
     website_url: "http://loveandhummus.com/",
     offers_catering: false,
+    logo_url: "love_and_hummus.png",
     description: "Local Organic Hummus"
   },
   {
@@ -197,6 +210,7 @@ businesses = [
     name: "Neo Cocoa",
     website_url: "http://neococoastore.com/",
     offers_catering: false,
+    logo_url: "neo_cocoa.png",
     description: "Artisanal truffles and brittles"
   },
   {
@@ -216,6 +230,7 @@ businesses = [
     name: "Onigilly",
     website_url: "http://www.onigilly.com/",
     offers_catering: true,
+    logo_url: "onigilly.png",
     description: "Japanese Gourmet Rice Balls"
   },
   {
@@ -241,6 +256,7 @@ businesses = [
     name: "Peas of Mind",
     website_url: "http://www.peasofmind.com/",
     offers_catering: false,
+    logo_url: "peas_of_mind.png",
     description: "Frozen Kids Food"
   },
   {
@@ -261,12 +277,14 @@ businesses = [
     name: "Sabores del Sur",
     website_url: "http://www.saboresdelsursf.com/",
     offers_catering: true,
+    logo_url: "sabores_del_sur.png",
     description: "Chilean Cafe specializing in Empanadas and Alfajores"
   },
   {
     name: "Sajen",
     website_url: "http://sajen.com.my/",
     offers_catering: false,
+    logo_url: "sajen.png",
     description: "Indonesian Beverages"
   },
   {
@@ -320,6 +338,7 @@ businesses = [
     name: "Zella's Soulful Kitchen",
     website_url: "http://www.zellassoulfulkitchen.com/",
     offers_catering: true,
+    logo_url: "zellas.png",
     description: "California Fresh Soul Food"
   },
 ]
