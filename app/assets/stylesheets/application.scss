@@ -1,13 +1,14 @@
  @import "foundation_and_overrides";
 
+ @import 'catering';
  @import 'common';
+ @import 'donate';
+ @import 'events';
  @import 'footer';
  @import 'header';
- @import 'events';
  @import 'home';
  @import 'incubator';
  @import 'mission';
- @import 'donate';
- @import 'catering';
- @import 'people';
  @import 'overrides';
+ @import 'people';
+ @import 'volunteer';
