@@ -25,6 +25,10 @@
 }
 
 .businesses {
+  @include breakpoint(small only) {
+    width : 336px;
+    margin: auto!important;
+  }
   img {
     height : 5rem;
     width  : 5rem;

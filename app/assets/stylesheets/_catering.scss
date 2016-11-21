@@ -62,6 +62,13 @@
 					clear: both!important;
 				}
 			}
+
+			@include breakpoint(small only) {
+				width : 224px;
+				.float-left {
+					padding : 0;
+				}
+			}
 		}
 	}
 
