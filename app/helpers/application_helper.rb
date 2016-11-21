@@ -178,10 +178,6 @@ module ApplicationHelper
           {
             name: 'People',
             url: '/people',
-          },
-          {
-            name: 'Press',
-            url: '/press',
           }
         ]
       },
