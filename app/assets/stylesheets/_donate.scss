@@ -82,12 +82,9 @@
   }
 
   .mission {
-    h1 { width : 450px; }
-
     p {
       display     : inline-block;
       color       : $charcoal-gray;
-      width       : 600px;
       font-size   : 20px;
       font-weight : 500;
       line-height : 1.5;
@@ -124,9 +121,6 @@
     }
 
   .support {
-    width  : 1085px;
-    margin : auto;
-
     h2 {
       color         : $charcoal-gray;
       font-size     : 28px;
@@ -152,13 +146,12 @@
       }
 
       .title {
-        text-transform: uppercase;
-        font-weight: 600;
+        text-transform : uppercase;
+        font-weight    : 600;
       }
 
       .description {
         display : inline-block;
-        width   : 498px;
       }
     }
   }
