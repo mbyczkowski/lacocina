@@ -50,3 +50,8 @@ You can reach staging at http://lacocina-staging.herokuapp.com
 #### Production
 
 You can reach production at http://lacocina-prod.herokuapp.com
+
+
+### SSL
+
+Production app uses Heroku SSL and is set up with custom SSL certs from Let's Encrypt. Let's Encrypt certs are valid for 30 days, but they are set-up to auto-renew using https://github.com/dmathieu/sabayon app to generate and renew certs.
