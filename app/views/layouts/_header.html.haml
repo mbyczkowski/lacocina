@@ -9,9 +9,6 @@
 
     .show-for-large
       %nav#top-menu.top-bar{'data-topbar': true, role: 'navigation'}
-        - if signed_in?
-          = link_to "Sign Out", sign_out_path, method: :delete
-
         .top-bar-title.logo-size
           = link_to root_path do
             = image_tag 'logo.png'
@@ -19,6 +16,8 @@
         .social-media-icons
           = render partial: 'layouts/social_media'
           = link_to 'Donate', '/donate', class: 'button'
+          - if signed_in?
+            = link_to "Sign Out", sign_out_path, method: :delete
 
         %ul.dropdown.menu{'data-dropdown-menu': true}
           - menu_items.each do |menu_item|
