@@ -38,7 +38,6 @@ module ApplicationHelper
         title: 'Executive Director',
         phone: '(415) 824-2729, ext. 304',
         email: 'caleb@lacocinasf.org',
-        tagLine: 'Contact me for marketing opportunities, donor inquires',
         photo: 'caleb.jpg',
         content: [
           'Caleb was accidentally hired as an assistant pastry chef at Ruppert’s Restaurant, in his hometown of Washington DC, when he was 16 years old, and hasn’t left the kitchen since. He has worked dish lines at national chains, service counters for independent butcher shops and front of the house for some of the best restaurants in the country (and some of the worst too). After graduating from the University of Michigan with degrees in English and Globalization and Culture, Caleb interned with ProMujer in El Alto Bolivia, learning about microfinance in its infancy and bringing those programming lessons to bear at La Cocina when it opened its doors in 2005.',
@@ -52,7 +51,6 @@ module ApplicationHelper
         title: 'Programs and Development Manager',
         phone: '(415) 824-2729, ext. 306',
         email: 'leticia@lacocinasf.org',
-        tagLine: 'Contact me for marketing opportunities, donor inquires',
         photo: 'leticia.jpg',
         content: [
           'Leticia learned about La Cocina in her last week of college when she read an article about El Huarache Loco in The New York Times. After moving to San Francisco to work at a foundation she visited La Cocina’s Ferry Plaza Farmers Market booth a couple of times and decided it was an organization she wanted to volunteer for. Coincidentally, she met Valeria (the Executive Director at the time) at a Holiday Party and instead of becoming a volunteer she began as a staff member in February 2008.',
@@ -150,7 +148,7 @@ module ApplicationHelper
       },
       {
         name: 'Maribel Ramirez',
-        title: 'tbd',
+        title: 'Sales and Marketing Associate',
         phone: '415-824-2729 ext 310',
         email: 'maribel@lacocinasf.org',
         photo: 'maribel.png',
@@ -196,10 +194,6 @@ module ApplicationHelper
           {
             name: 'Volunteer',
             url: '/volunteer'
-          },
-          {
-            name: 'Other Ways',
-            url: '/other_ways_to_help'
           }
         ]
       },

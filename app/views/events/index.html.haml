@@ -23,7 +23,8 @@
 
         .large-10.columns
           .title= event.title
-          .date= event.subTitle
+          - if event.subTitle
+            .date= event.subTitle
 
           %p= event.content
 
