@@ -51,27 +51,6 @@
 		}
 	}
 
-	.caterers {
-		.businesses {
-			display : inline-block;
-
-			.float-left {
-				padding : 0 80px;
-
-				&:nth-child(odd) {
-					clear: both!important;
-				}
-			}
-
-			@include breakpoint(small only) {
-				width : 224px;
-				.float-left {
-					padding : 0;
-				}
-			}
-		}
-	}
-
 	.questions {
 		margin-bottom : 300px;
 
