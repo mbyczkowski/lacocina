@@ -2,12 +2,13 @@ class Event
   EVENTS = [
     {
       title: 'Orientations 2017',
+      subTitle: 'Our 2017 orientations will be on: Jan 25th, March 29th, May 31st, July 26th, September 27th, November 29th.',
       image: 'logo.png',
       content: 'In order to apply to La Cocina’s incubator program, you must attend an orientation workshop on starting a food business in the Bay Area. This workshop is free and open to the public but we suggest that you sign up ahead of time to make checking in easier. We will send a confirmation email 1 week before the orientation to confirm your sign up. All orientations take place on Wednesdays from 6-8pm at La Cocina.',
       actions: [
         {
           label: 'VISIT EVENT WEBSITE',
-          url: 'https://www.eventbrite.com/e/la-cocina-orientation-orientacion-de-la-cocina-tickets-19178270724',
+          url: 'https://www.eventbrite.com/e/la-cocina-orientation-orientacion-de-la-cocina-tickets-28949360316',
           type: 'hollow'
         }
       ]
@@ -26,11 +27,12 @@ class Event
     },
     {
       title: 'La Cocina Holiday Event',
+      subTitle: 'La Cocina\'s El Mercado, December 11th',
       image: 'holiday_market.png',
       content: 'For one day in December, La Cocina will transform The Women’s Building into a pop-up holiday bazaar, creating a vibrant marketplace, with over 20 food vendors and DIY artisans, for natives and tourists alike to celebrate local entrepreneurship and find the perfect gift and treats for the holidays. Look forward to a weekend of food, crafts, music and more!',
       actions: [
         {
-          label: 'VISIT EVENT WEBSITE',
+          label: 'purchase tickets',
           url: 'https://www.eventbrite.com/e/la-cocina-presents-el-mercado-a-holiday-market-tickets-27164304165',
           type: 'hollow'
         }

@@ -48,7 +48,7 @@ module ApplicationHelper
       },
       {
         name: 'Leticia Landa',
-        title: 'Programs and Development Manager',
+        title: 'Deputy Director',
         phone: '(415) 824-2729, ext. 306',
         email: 'leticia@lacocinasf.org',
         photo: 'leticia.jpg',
@@ -62,7 +62,7 @@ module ApplicationHelper
       },
       {
         name: 'Geetika Agrawal',
-        title: 'Business Development Manager',
+        title: 'Senior Program Manager',
         phone: '(415) 824-2729 ext.305',
         email: 'email: geetika@lacocinasf.org',
         photo: 'Geetika.jpg',
