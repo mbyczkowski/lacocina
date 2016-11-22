@@ -196,10 +196,6 @@ module ApplicationHelper
           {
             name: 'Volunteer',
             url: '/volunteer'
-          },
-          {
-            name: 'Other Ways',
-            url: '/other_ways_to_help'
           }
         ]
       },
