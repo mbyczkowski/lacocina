@@ -33,6 +33,7 @@ businesses = [
     name: "Banquetes Adonai",
     website_url: "https://www.facebook.com/BanquetesadonaiSf/",
     offers_catering: false,
+    logo_url: "banquetes_adonai.png",
     description: "Full-Service Latin offers_catering for Special Events"
   },
   {
@@ -95,6 +96,7 @@ businesses = [
     name: "El Meson de Violeta",
     website_url: "https://www.facebook.com/mesondevioleta/",
     offers_catering: false,
+    logo_url: "el_meson_de_violeta.png",
     description: "Chilean Empanadas"
   },
   {
@@ -178,6 +180,7 @@ businesses = [
     name: "Mi Comedor",
     website_url: "https://www.facebook.com/homemadesaborlatino/",
     offers_catering: false,
+    logo_url: "mi_comedor.png",
     description: ""
   },
   {
@@ -198,12 +201,14 @@ businesses = [
     name: "Mission Boriqua",
     website_url: "",
     offers_catering: false,
+    logo_url: "mission_boriqua.png",
     description: "Puerto Rican Soul Food"
   },
   {
     name: "Mixiotes",
     website_url: "",
     offers_catering: false,
+    logo_url: "mixiotes.png",
     description: ""
   },
   {
@@ -217,6 +222,7 @@ businesses = [
     name: "Noodle Girl",
     website_url: "",
     offers_catering: false,
+    logo_url: "noodle_girl.png",
     description: "Traditional Vietnamese Noodle Soups"
   },
   {
@@ -237,12 +243,14 @@ businesses = [
     name: "Origen",
     website_url: "",
     offers_catering: false,
+    logo_url: "origen.png",
     description: "Oaxacan Moles and more"
   },
   {
     name: "Oyna Natural Foods",
     website_url: "http://www.oynanaturalfoods.com/",
     offers_catering: false,
+    logo_url: "oyna_natural_foods.png",
     description: "Persian Kukus"
   },
   {
@@ -298,6 +306,7 @@ businesses = [
     name: "Sariwa",
     website_url: "",
     offers_catering: false,
+    logo_url: "sariwa.png",
     description: "Sustainable Filipino Foods"
   },
   {
@@ -318,6 +327,7 @@ businesses = [
     name: "Super Sauces",
     website_url: "",
     offers_catering: false,
+    logo_url: "super_sauces.png",
     description: "Healthy Sauces made mostly of avocado"
   },
   {
