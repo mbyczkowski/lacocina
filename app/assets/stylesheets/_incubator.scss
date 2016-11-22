@@ -1,6 +1,9 @@
 .incubator-page {
   .hero {
-    .image-callout { width : 960px; }
+    .image-callout {
+      width : 67vw;
+      .text { font-size: 3.1vw; }
+    }
   }
 
   h2 {

@@ -20,6 +20,9 @@
     }
 
     .input-button-combo {
+      @include breakpoint(small only) {
+        width: 363px;
+      }
       width    : 450px;
       position : relative;
 

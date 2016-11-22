@@ -14,6 +14,14 @@
     .text.responsive-typography { font-size: 2.5vw; }
   }
 
+  &.monthly {
+    @include breakpoint(small only) {
+      .image-callout {
+        bottom : 10px;
+      }
+    }
+  }
+
   .membership-cta {
     background : $green;
     text-align : center;
@@ -47,10 +55,11 @@
     }
 
     .option {
-      border  : 1px solid $green;
-      padding : 20px 15px;
-      height  : 338px;
-      width   : 360px;
+      border        : 1px solid $green;
+      padding       : 20px 15px;
+      height        : 338px;
+      width         : 360px;
+      margin-bottom : 20px;
 
       .title {
         color         : $green;
@@ -81,12 +90,9 @@
   }
 
   .mission {
-    h1 { width : 450px; }
-
     p {
       display     : inline-block;
       color       : $charcoal-gray;
-      width       : 600px;
       font-size   : 20px;
       font-weight : 500;
       line-height : 1.5;
@@ -123,9 +129,6 @@
     }
 
   .support {
-    width  : 1085px;
-    margin : auto;
-
     h2 {
       color         : $charcoal-gray;
       font-size     : 28px;
@@ -151,13 +154,12 @@
       }
 
       .title {
-        text-transform: uppercase;
-        font-weight: 600;
+        text-transform : uppercase;
+        font-weight    : 600;
       }
 
       .description {
         display : inline-block;
-        width   : 498px;
       }
     }
   }

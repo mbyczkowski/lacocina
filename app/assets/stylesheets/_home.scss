@@ -45,17 +45,22 @@
   }
 
   .hero {
-    @include breakpoint(small only) {
-      .text {
-        transform: translateY(-40%);
-        .cta {
-          margin-top: 0;
+    .image-callout {
+      width : 50vw;
+      bottom: -47px;
+
+      @include breakpoint(small only) {
+        bottom : -12px;
+        .text {
+          transform: translateY(-40%);
+          .cta {
+            margin-top: -0.7vw;
+            .button {
+              padding : 2.1vw 1em;
+            }
+          }
         }
       }
-    }
-
-    .image-callout {
-      bottom: -47px;
     }
 
     .text {
@@ -129,10 +134,24 @@
     }
 
     .pie-charts {
+      font-size       : 1em;
       padding-top     : 22px;
       flex-direction  : row;
       justify-content : space-between;
       display         : flex;
+
+      br { display : none; }
+
+      @include breakpoint(small only) {
+        display : block;
+        .pie-chart {
+          display : block;
+          width : 50%;
+          &:nth-child(even) { float: right; }
+          &:nth-child(odd)  { float: left; clear: both; }
+          margin-bottom: 30px;
+        }
+      }
     }
   }
 

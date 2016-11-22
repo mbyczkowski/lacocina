@@ -238,7 +238,7 @@ module ApplicationHelper
 
   def business_link(business)
     if business.website_url
-      link_to business.name, business.website_url
+      link_to business.name, business.website_url, { target: "_blank" }
     else
       business.name
     end

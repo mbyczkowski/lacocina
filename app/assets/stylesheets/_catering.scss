@@ -3,7 +3,10 @@
 .catering-page {
 
 	.hero {
-		.image-callout { width : 582px; }
+		.image-callout {
+			width : 41vw;
+			.text { font-size: 3vw; }
+		}
 	}
 
 	.section-header {
@@ -43,7 +46,7 @@
 
 			.button {
 				width  : 250px;
-				margin : 0 10px;
+				margin : 15px 10px;
 			}
 		}
 	}
@@ -57,6 +60,13 @@
 
 				&:nth-child(odd) {
 					clear: both!important;
+				}
+			}
+
+			@include breakpoint(small only) {
+				width : 224px;
+				.float-left {
+					padding : 0;
 				}
 			}
 		}
