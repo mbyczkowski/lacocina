@@ -3,7 +3,7 @@ class Event
     {
       title: 'Orientations 2017',
       subTitle: 'Our 2017 orientations will be on: Jan 25th, March 29th, May 31st, July 26th, September 27th, November 29th.',
-      image: 'logo.png',
+      image: 'logo.svg',
       content: 'In order to apply to La Cocina’s incubator program, you must attend an orientation workshop on starting a food business in the Bay Area. This workshop is free and open to the public but we suggest that you sign up ahead of time to make checking in easier. We will send a confirmation email 1 week before the orientation to confirm your sign up. All orientations take place on Wednesdays from 6-8pm at La Cocina.',
       actions: [
         {
