@@ -45,6 +45,17 @@
   }
 
   .hero {
+    @include breakpoint(small down) {
+      height: 75vw;
+    }
+    @include breakpoint(medium only) {
+      height: 60vw;
+    }
+    @include breakpoint(large up) {
+      height: 36vw;
+    }
+
+
     .image-callout {
       width : 50vw;
       bottom: -47px;
