@@ -44,6 +44,13 @@ businesses = [
     description: "Nepalese Food from the Soul"
   },
   {
+    name: "Crumble & Whisk Pâtisserie",
+    website_url: "http://crumbleandwhisk.com/",
+    offers_catering: false,
+    logo_url: "crumble_whisk.png",
+    description: "Artisan Cheesecakes"
+  },
+  {
     name: "Chaac Mool",
     website_url: "https://www.facebook.com/ChaacMoolSF/",
     offers_catering: false,
