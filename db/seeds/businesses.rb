@@ -318,7 +318,7 @@ businesses = [
   },
   {
     name: "Senora Maritza",
-    website_url: "http://www.senoramaritzaoffers_catering.com/",
+    website_url: "http://www.senoramaritzacatering.com/",
     offers_catering: true,
     logo_url: "senora_maritza.png",
     description: "Colombian Specialties"
