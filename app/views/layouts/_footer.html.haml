@@ -2,11 +2,12 @@
   .header Stay Connected
 
   .newsletter-sign-up
-    %label Sign in with your email address below to receive our newsletter.
+    = form_for :newsletter, url: newsletters_path do |form|
+      = form.label 'Sign in with your email address below to receive our newsletter.'
 
-    .input-button-combo
-      %input{:type => "email"}
-      .button Sign Up
+      .input-button-combo
+        = form.text_field :email, type: 'email'
+        = form.submit 'Sign Up', class: 'button'
 
     .social-media-icons
       = render partial: 'layouts/social_media'
