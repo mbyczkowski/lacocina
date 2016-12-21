@@ -9,7 +9,6 @@ Rails.application.routes.draw do
 
   resources :passwords, controller: "clearance/passwords", only: [:create, :new]
   resource :session, controller: "clearance/sessions", only: [:create]
-
   resources :users, controller: "clearance/users", only: [:create] do
     resource :password,
       controller: "clearance/passwords",
@@ -27,5 +26,6 @@ Rails.application.routes.draw do
 
   resource :home, controller: :home
   resources :events, only: [:index, :show]
+  resources :newsletters, only: [:create]
   get ':page' => 'pages#show'
 end
