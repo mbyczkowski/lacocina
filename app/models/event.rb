@@ -3,7 +3,7 @@ class Event
     {
       title: 'Orientations 2017',
       subTitle: 'Our 2017 orientations will be on: Jan 25th, March 29th, May 31st, July 26th, September 27th, November 29th.',
-      image: 'logo.svg',
+      image: 'logo.png',
       content: 'In order to apply to La Cocina’s incubator program, you must attend an orientation workshop on starting a food business in the Bay Area. This workshop is free and open to the public but we suggest that you sign up ahead of time to make checking in easier. We will send a confirmation email 1 week before the orientation to confirm your sign up. All orientations take place on Wednesdays from 6-8pm at La Cocina.',
       actions: [
         {
@@ -26,18 +26,72 @@ class Event
       ]
     },
     {
-      title: 'La Cocina Holiday Event',
-      subTitle: 'La Cocina\'s El Mercado, December 11th',
-      image: 'holiday_market.png',
-      content: 'For one day in December, La Cocina will transform The Women’s Building into a pop-up holiday bazaar, creating a vibrant marketplace, with over 20 food vendors and DIY artisans, for natives and tourists alike to celebrate local entrepreneurship and find the perfect gift and treats for the holidays. Look forward to a weekend of food, crafts, music and more!',
+      title: 'F&B: Voices from the Kitchen: Race',
+      subTitle: 'April 7th, Swedish American Music Hall, SF',
+      image: 'logo.png',
+      content: 'One night event of performance-based storytelling by oral historians & La Cocina Chefs, To share the voices, chefs and stories from the food industry that are off less heard. To highlight La Cocina Clients as important voices in the community. Elevate Perception of entrepreneurs and therefore increase opportunities offered to LC and LC clients.',
       actions: [
         {
-          label: 'purchase tickets',
-          url: 'https://www.eventbrite.com/e/la-cocina-presents-el-mercado-a-holiday-market-tickets-27164304165',
+          label: 'VISIT EVENT WEBSITE',
+          url: 'http://www.voicesfromthekitchen.org',
+          type: 'hollow'
+        },
+        {
+          label: 'SIGN UP AS VOLUNTEER',
+          url: 'http://signup.com/go/NDFbFU',
           type: 'hollow'
         }
       ]
-    }
+    },
+    {
+      title: 'La Cocina’s 5th Annual Fundraising Gala',
+      subTitle: 'May 22nd, The Pearl SF',
+      image: 'logo.png',
+      content: 'A fundraising event to sustain La Cocina’s work and in celebration of the entrepreneurs of La Cocina. This year’s theme will honor long-time board member and chef traci des jardins for her influence in the industry and years of service to La Cocina.',
+      actions: [
+        {
+          label: 'VISIT EVENT WEBSITE',
+          url: 'https://lacocinasf5thgala.eventbrite.com',
+          type: 'hollow'
+        },
+        {
+          label: 'SIGN UP AS VOLUNTEER',
+          url: 'http://signup.com/go/V1QCNU',
+          type: 'hollow'
+        }
+      ]
+    },
+    {
+      title: 'F&B: Voices from the Kitchen: Refuge',
+      subTitle: 'October 19th, Swedish American Music Hall, SF',
+      image: 'logo.png',
+      content: 'One night event of performance-based storytelling by oral historians & La Cocina Chefs, To share the voices, chefs and stories from the food industry that are off less heard. To highlight La Cocina Clients as important voices in the community. Elevate Perception of entrepreneurs and therefore increase opportunities offered to LC and LC clients.',
+      actions: [
+        {
+          label: 'VISIT EVENT WEBSITE',
+          url: 'http://www.voicesfromthekitchen.org',
+          type: 'hollow'
+        },
+        {
+          label: 'SIGN UP AS VOLUNTEER',
+          url: 'http://signup.com/go/NDFbFU',
+          type: 'hollow'
+        }
+      ]
+    },
+    {
+      title: 'La Cocina Tamalada',
+      subTitle: 'December 13th, 2048 Folsom St, SF',
+      image: 'logo.png',
+      content: 'Join the city’s best tamale makers from La Cocina, as they work their masa magic, and then take your tamales home for your holiday parties. La Tamalada is an annual holiday celebration of food and family run by the family matriarchs. Sit down with our tamale masters for a hands on course on crafting your own tamales! Enjoy dinner and also take your tamales home!',
+      actions: [
+        {
+          label: 'VISIT EVENT WEBSITE',
+          url: 'https://lacocinasfelmercado.eventbrite.com',
+          type: 'hollow'
+        }
+      ]
+    },
   ]
 
   def self.all
