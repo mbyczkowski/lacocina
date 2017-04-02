@@ -4,6 +4,6 @@ class EventsController < ApplicationController
   end
 
   def show
-    Event.find_by_id(params[:id])
+    redirect_to events_path
   end
 end
