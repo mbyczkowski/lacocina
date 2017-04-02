@@ -10,6 +10,8 @@ class PagesController < ApplicationController
           render 'coming_soon'
         end
       end
+    rescue ActionView::MissingTemplate
+      render 'not_found', status: :not_found
     end
 
     private
