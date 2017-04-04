@@ -11,7 +11,10 @@ class PagesController < ApplicationController
         end
       end
     rescue ActionView::MissingTemplate
-      render 'not_found', status: :not_found
+      respond_to do |format|
+        format.html { render 'not_found', status: :not_found }
+        format.any { render status: :not_found, nothing: true }
+      end
     end
 
     private
