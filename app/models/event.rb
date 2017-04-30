@@ -26,24 +26,6 @@ class Event
       ]
     },
     {
-      title: 'F&B: Voices from the Kitchen: Race',
-      subTitle: 'April 7th, Swedish American Music Hall, SF',
-      image: 'logo.png',
-      content: 'One night event of performance-based storytelling by oral historians & La Cocina Chefs, To share the voices, chefs and stories from the food industry that are off less heard. To highlight La Cocina Clients as important voices in the community. Elevate Perception of entrepreneurs and therefore increase opportunities offered to LC and LC clients.',
-      actions: [
-        {
-          label: 'VISIT EVENT WEBSITE',
-          url: 'http://www.voicesfromthekitchen.org',
-          type: 'hollow'
-        },
-        {
-          label: 'SIGN UP AS VOLUNTEER',
-          url: 'http://signup.com/go/NDFbFU',
-          type: 'hollow'
-        }
-      ]
-    },
-    {
       title: 'La Cocina’s 5th Annual Fundraising Gala',
       subTitle: 'May 22nd, The Pearl SF',
       image: 'logo.png',
