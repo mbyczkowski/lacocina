@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get "/scheduling" => redirect("http://ems.lacocinasf.org/virtualEMS/Login.aspx")
+  get "/scheduling" => redirect("http://52.53.248.236/VirtualEMS/Login.aspx")
   namespace :admin do
     resources :users
     resources :businesses
