@@ -6,6 +6,10 @@ module ApplicationHelper
     image_tag "","data-interchange" => "[#{asset_path(large_name)}, large],[#{asset_path(medium_name)}, only screen and (min-width: 40.063em) and (max-width: 64em)],[#{asset_path(small_name)}, only screen and (max-width: 40em)]"
   end
 
+  def catering_form_url
+    "https://lacocina-sf.formstack.com/forms/la_cocina_catering_intake_form"
+  end
+
   def social_media_links
     [
       {
