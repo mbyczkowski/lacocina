@@ -2,7 +2,7 @@ class Event
   EVENTS = [
     {
       title: 'Orientations 2017',
-      subTitle: 'Our 2017 orientations will be on: Jan 25th, March 29th, May 31st, July 26th, September 27th, November 29th.',
+      subTitle: 'Our 2017 orientations will be on: September 27th and November 29th.',
       image: 'logo.png',
       content: 'In order to apply to La Cocina’s incubator program, you must attend an orientation workshop on starting a food business in the Bay Area. This workshop is free and open to the public but we suggest that you sign up ahead of time to make checking in easier. We will send a confirmation email 1 week before the orientation to confirm your sign up. All orientations take place on Wednesdays from 6-8pm at La Cocina.',
       actions: [
@@ -26,20 +26,19 @@ class Event
       ]
     },
     {
-      title: 'La Cocina’s 5th Annual Fundraising Gala',
-      subTitle: 'May 22nd, The Pearl SF',
-      image: 'logo.png',
-      content: 'A fundraising event to sustain La Cocina’s work and in celebration of the entrepreneurs of La Cocina. This year’s theme will honor long-time board member and chef traci des jardins for her influence in the industry and years of service to La Cocina.',
+      title: 'SF Street Food Festival',
+      subTitle: 'October 15th, The Potrero Power Station, SF',
+      image: 'sfstreetfest.jpg',
+      content: 'The 2017 San Francisco Street Food Festival is a celebration of American food - a story told through Mexican huaraches, Vietnamese pho, Southern fried chicken, Nepalese dumplings and so much more. The festival will spotlight 30+ Bay Area chefs and restaurants whose food and voice have shaped this place we call home.',
       actions: [
         {
           label: 'VISIT EVENT WEBSITE',
-          url: 'https://lacocinasf5thgala.eventbrite.com',
+          url: 'https://www.sfstreetfoodfest.com/',
           type: 'hollow'
         },
         {
-          label: 'SIGN UP AS VOLUNTEER',
-          url: 'http://signup.com/go/V1QCNU',
-          type: 'hollow'
+          label: 'BUY TICKETS',
+          url: 'https://www.eventbrite.com/e/la-cocina-presents-san-franciscos-street-food-festival-tickets-35446067141',
         }
       ]
     },
