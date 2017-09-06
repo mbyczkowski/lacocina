@@ -14,18 +14,6 @@ class Event
       ]
     },
     {
-      title: 'Food & Entrepreneurship Conference',
-      image: 'f&e_conf.png',
-      content: 'For the past 5 years, the Food + Entrepreneurship Conference has been a gathering place for civic leaders, nonprofit innovators, and forward thinking food business owners to come together, rethink economic structures, share innovations and work together to build more equitable, vibrant and delicious cities. Leaders and innovators from as close as Oakland to as far as Helsinki have looked to La Cocina throughout the years to engage in dialogue and revolutionize the way we produce, eat and think about food.',
-      actions: [
-        {
-          label: 'VISIT EVENT WEBSITE',
-          url: 'http://www.lacocinaconference.org',
-          type: 'hollow'
-        }
-      ]
-    },
-    {
       title: 'SF Street Food Festival',
       subTitle: 'October 15th, The Potrero Power Station, SF',
       image: 'sfstreetfest.jpg',
@@ -69,6 +57,18 @@ class Event
         {
           label: 'VISIT EVENT WEBSITE',
           url: 'https://lacocinasfelmercado.eventbrite.com',
+          type: 'hollow'
+        }
+      ]
+    },
+    {
+      title: 'Food & Entrepreneurship Conference',
+      image: 'f&e_conf.png',
+      content: 'For the past 5 years, the Food + Entrepreneurship Conference has been a gathering place for civic leaders, nonprofit innovators, and forward thinking food business owners to come together, rethink economic structures, share innovations and work together to build more equitable, vibrant and delicious cities. Leaders and innovators from as close as Oakland to as far as Helsinki have looked to La Cocina throughout the years to engage in dialogue and revolutionize the way we produce, eat and think about food.',
+      actions: [
+        {
+          label: 'VISIT EVENT WEBSITE',
+          url: 'http://www.lacocinaconference.org',
           type: 'hollow'
         }
       ]
