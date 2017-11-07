@@ -163,6 +163,20 @@ module ApplicationHelper
           'When she returned to the States she never looked back. At first volunteering as a garden and cooking educator and at various food banks throughout the Bay Area, she started working in the crazy, hectic and creative restaurant world. Most recently she developed her skills as a corporative event coordinator for prominent pharmaceutical, tech and law companies and she is excited to bring that experience to La Cocina. Maribel believes that food is disarming; open happy mouths equal open happy hearts. Cooking and eating transcend the barriers of language and culture. She can’t believe how lucky she is to have found a home in La Cocina that combines her skills with her passion for food, social and economic justice.',
           'Favorite food: anything with mole, paris-brest, and chilaquiles'
         ]
+      },
+      {
+        name: 'Megan Orpwood-Russell',
+        title: 'Conference & Storytelling Project Manager',
+        phone: '415-824-2729 ext 310',
+        email: 'megan@lacocinasf.org',
+        photo: 'megan.jpg',
+        content: [
+          'Megan Orpwood-Russell is the newest member of the La Cocina family, and is the Conference & Storytelling Project Manager.',
+          'Raised in rural England where she was taught to grow her own fruit and vegetables, Megan took on the cooking duties in her family when she was 9 and has been been bringing people together through food ever since.',
+          'Megan studied English Literature, and continued on to do an MA in Creative Writing, both of which led (perhaps unsurprisingly) to communications roles. She organized academic symposia at the London Zoo and coordinated large scale literary festivals before moving to the US and working as a Marketing Director for a circus school.',
+          'Megan is driven by stories, and by elevating voices who are often unheard. She has been working as a freelance writer and activist for several years, and is excited to bring diverse communities together through the La Cocina Conference to discuss how we make cities equitable through food businesses.',
+          'Her favorite food is: anything pickled or fermented, and halloumi cheese.'
+        ]
       }
     ]
   end
