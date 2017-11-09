@@ -34,7 +34,7 @@ class Event
       actions: [
         {
           label: 'VISIT EVENT WEBSITE',
-          url: 'https://lacocinasfelmercado.eventbrite.com',
+          url: 'https://www.eventbrite.com/e/la-cocinas-tamalada-2017-making-your-holiday-tamales-tickets-11559154743',
           type: 'hollow'
         }
       ]
