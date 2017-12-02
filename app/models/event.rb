@@ -1,8 +1,8 @@
 class Event
   EVENTS = [
     {
-      title: 'Orientations 2017/2018',
-      subTitle: 'Our 2017 orientations will be on: November 29th. Our 2018 orientations will be on: January 31st, March 28th, May 30th, July 25th, September 26th and November 28th.',
+      title: 'Orientations 2018',
+      subTitle: 'Our 2018 orientations will be on: January 31st, March 28th, May 30th, July 25th, September 26th and November 28th.',
       image: 'logo.png',
       content: 'In order to apply to La Cocina’s incubator program, you must attend an orientation workshop on starting a food business in the Bay Area. This workshop is free and open to the public but we suggest that you sign up ahead of time to make checking in easier. We will send a confirmation email 1 week before the orientation to confirm your sign up. All orientations take place on Wednesdays from 6-8pm at La Cocina.',
       actions: [
@@ -28,7 +28,7 @@ class Event
     },
     {
       title: 'La Cocina Tamalada',
-      subTitle: 'December 13th, 2048 Folsom St, SF',
+      subTitle: 'December 9th, 2948 Folsom St, SF',
       image: 'logo.png',
       content: 'Join the city’s best tamale makers from La Cocina, as they work their masa magic, and then take your tamales home for your holiday parties. La Tamalada is an annual holiday celebration of food and family run by the family matriarchs. Sit down with our tamale masters for a hands on course on crafting your own tamales! Enjoy dinner and also take your tamales home!',
       actions: [
