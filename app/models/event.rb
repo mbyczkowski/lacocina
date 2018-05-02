@@ -1,53 +1,40 @@
 class Event
   EVENTS = [
     {
-      title: 'Orientations 2018',
-      subTitle: 'Our 2018 orientations will be on: January 31st, March 28th, May 30th, July 25th, September 26th and November 28th.',
+      title: 'La Cocina’s 6th Annual Gala',
+      subTitle: 'May 21st, City View at Metreon',
       image: 'logo.png',
-      content: 'In order to apply to La Cocina’s incubator program, you must attend an orientation workshop on starting a food business in the Bay Area. This workshop is free and open to the public but we suggest that you sign up ahead of time to make checking in easier. We will send a confirmation email 1 week before the orientation to confirm your sign up. All orientations take place on Wednesdays from 6-8pm at La Cocina.',
+      content: 'La Cocina\'s 6th Annual Gala is a celebration of La Cocina entrepreneurs, whose success has grown an idea into an institution, and, in doing so, has inspired organizations from Salt Lake City to Riyadh to London to adopt our model. On May 21st at City View Metreon, four immigrant chefs from kitchen incubators from around the country will prepare a multi-course meal showcasing a new American cuisine.',
       actions: [
         {
           label: 'VISIT EVENT WEBSITE',
-          url: 'https://www.eventbrite.com/e/la-cocina-orientation-orientacion-de-la-cocina-tickets-19178264706',
-          type: 'hollow'
-        }
-      ]
-    },
-    {
-      title: 'Office Hours',
-      subTitle: 'Our Office Hours will be: December 14th, February 15th, April 19th, June 21st, August 16th, October 18th and November 15th.',
-      image: 'logo.png',
-      content: 'Please see the event website for more details.',
-      actions: [
-        {
-          label: 'VISIT EVENT WEBSITE',
-          url: 'https://www.eventbrite.com/e/office-hours-horas-de-consulta-tickets-19178682957',
+          url: 'https://lacocinasfauction.org',
           type: 'hollow'
         },
       ]
     },
     {
-      title: 'La Cocina Tamalada',
-      subTitle: 'December 9th, 2948 Folsom St, SF',
+      title: 'F&B: Voices from the Kitchen',
+      subTitle: 'June 1st, The Gray Theater, 2665 Mission Street, SF',
       image: 'logo.png',
-      content: 'Join the city’s best tamale makers from La Cocina, as they work their masa magic, and then take your tamales home for your holiday parties. La Tamalada is an annual holiday celebration of food and family run by the family matriarchs. Sit down with our tamale masters for a hands on course on crafting your own tamales! Enjoy dinner and also take your tamales home!',
+      content: 'F&B is a twice-yearly immersive storytelling experience sharing the voices and stories for the food industry that are less-often heard.',
       actions: [
         {
           label: 'VISIT EVENT WEBSITE',
-          url: 'https://www.eventbrite.com/e/la-cocinas-tamalada-2017-making-your-holiday-tamales-tickets-11559154743',
+          url: 'https://voicesfromthekitchen.org',
           type: 'hollow'
-        }
+        },
       ]
     },
     {
       title: 'Drop-In Market',
-      subTitle: 'Our Market will be on: February 21st, May 9th and August 8th.',
+      subTitle: 'Our Market will be on: May 9th and August 8th.',
       image: 'logo.png',
       content: 'The Drop in Market is an easy-going, casual and fun event where you and your business idea is the center of attention. The La Cocina staff and volunteering food professionals are here to listen to you and give you feedback on what works and what might need some extra attention still. We know first hand how difficult it can be to start taking steps to formalize a business and we congratulate on beginning down that road. Our Drop in Market is a wonderful opportunity for you to make what we hope will be the firs of many sales, more importantly however, it will provide you with a place in which you can get real time feed back from a number of different industry experts.
 Bring: Your signature dish!',
       actions: [
         {
-          label: 'VISIT EVENT WEBSITE',
+          label: 'REGISTER FOR FREE',
           url: 'https://www.eventbrite.com/e/la-cocina-drop-in-market-el-mini-mercado-tickets-21686816853',
           type: 'hollow'
         },
@@ -55,28 +42,41 @@ Bring: Your signature dish!',
     },
     {
       title: 'La Cocina Application Review Workshop',
-      subTitle: 'Our application review workshops will be held on: February 28th, May 16th and August 22nd.',
+      subTitle: 'Our application review workshops will be held on: May 16th and August 22nd.',
       image: 'logo.png',
       content: 'Come join us for a workshop on how to best go about filling out our application. In this limited attendee workshop, we will cover key areas of focus and in general recommended approach when filling out our application. Our workshop will not only serve to make you a better applicant but it will also highlight areas of your business plan and concept that might need further revision. We highly recommend this workshop for people who are serious about applying to La Cocina.',
       actions: [
         {
-          label: 'VISIT EVENT WEBSITE',
+          label: 'REGISTER FOR FREE',
           url: 'https://www.eventbrite.com/e/la-cocina-application-review-workshop-taller-de-aplicacion-a-la-cocina-tickets-39629999395',
           type: 'hollow'
         },
       ]
     },
     {
-      title: 'Food & Entrepreneurship Conference',
-      subTitle: 'April 17-18th, Golden Gate Club, 135 Fisher Loop, SF',
-      image: 'f&e_conf.png',
-      content: 'For the past 5 years, the Food + Entrepreneurship Conference has been a gathering place for civic leaders, nonprofit innovators, and forward thinking food business owners to come together, rethink economic structures, share innovations and work together to build more equitable, vibrant and delicious cities. Leaders and innovators from as close as Oakland to as far as Helsinki have looked to La Cocina throughout the years to engage in dialogue and revolutionize the way we produce, eat and think about food.',
+      title: 'Orientations 2018',
+      subTitle: 'Our 2018 orientations will be on: May 30th, July 25th, September 26th and November 28th.',
+      image: 'logo.png',
+      content: 'In order to apply to La Cocina’s incubator program, you must attend an orientation workshop on starting a food business in the Bay Area. This workshop is free and open to the public but we suggest that you sign up ahead of time to make checking in easier. We will send a confirmation email 1 week before the orientation to confirm your sign up. All orientations take place on Wednesdays from 6-8pm at La Cocina.',
       actions: [
         {
-          label: 'VISIT EVENT WEBSITE',
-          url: 'http://www.lacocinaconference.org',
+          label: 'REGISTER FOR FREE',
+          url: 'https://www.eventbrite.com/e/la-cocina-orientation-orientacion-de-la-cocina-tickets-19178264706',
           type: 'hollow'
         }
+      ]
+    },
+    {
+      title: 'Office Hours',
+      subTitle: 'Our Office Hours will be: June 21st, August 16th, October 18th and November 15th.',
+      image: 'logo.png',
+      content: 'Please see the event website for more details.',
+      actions: [
+        {
+          label: 'REGISTER FOR FREE',
+          url: 'https://www.eventbrite.com/e/office-hours-horas-de-consulta-tickets-19178682957',
+          type: 'hollow'
+        },
       ]
     },
   ]

@@ -57,16 +57,16 @@ module ApplicationHelper
         email: 'leticia@lacocinasf.org',
         photo: 'leticia.jpg',
         content: [
-          'Leticia learned about La Cocina in her last week of college when she read an article about El Huarache Loco in The New York Times. After moving to San Francisco to work at a foundation she visited La Cocina’s Ferry Plaza Farmers Market booth a couple of times and decided it was an organization she wanted to volunteer for. Coincidentally, she met Valeria (the Executive Director at the time) at a Holiday Party and instead of becoming a volunteer she began as a staff member in February 2008.',
-          'Leticia studied Anthropology at Harvard and has a background international nonprofit work–she has lived in rural Northern India and rural Southwestern China working and studying agricultural poverty and its effects on women. She also completed the first year of culinary training at Le Cordon Bleu in Paris and worked on the line at Jeffrey’s Restaurant in Austin, Texas where she grew up. She is fluent in Spanish and French and (increasingly less) conversant in Mandarin Chinese.',
-          'Since joining La Cocina, Leticia has been named one of San Francisco’s Tastemakers by 7×7 Magazine and was named a Yoshiyama Young Entrepreneur by the Hitachi Foundation for her work on the program curriculum and social entrepreneurship. As Programs and Development Manager, Leticia oversees the Mobile Foods project and the Business Incubator and works with staff to set goals with all entrepreneurs around business growth and access to capital and market opportunities.',
-          'Leticia brings a passion for the kitchen to La Cocina and a true belief in the power of small food-base businesses in transforming people’s lives.',
-          'favorite foods: chilaquiles, quiche and the perfect brownie'
+          'Leticia learned about La Cocina in her last week of college while reading an article about El Huarache Loco (a La Cocina graduate) in The New York Times. After moving to San Francisco to work at a foundation, she visited La Cocina’s Ferry Plaza Farmers Market booth a couple of times and decided it was an organization she wanted to volunteer for. As the daughter of Mexican immigrants with a passion for food and cooking, the mission hit close to home. Coincidentally, Leticia met Valeria (La Cocina’s Executive Director at the time) at a holiday party and instead of becoming a volunteer she began as a staff member in February 2008.',
+          'Leticia studied Social Anthropology at Harvard and has a background international nonprofit work–she has lived in rural Northern India and rural Southwestern China working and studying agricultural poverty and its effects on women. She also completed the first year of culinary training at Le Cordon Bleu in Paris and worked on the line at Jeffrey’s Restaurant in Austin, Texas where she grew up. She is fluent in Spanish and French and (increasingly less) conversant in Mandarin Chinese.',
+          'Since joining La Cocina, Leticia has been named one of San Francisco’s Tastemakers by 7×7 Magazine, a Yoshiyama Young Entrepreneur by the Hitachi Foundation for her work on the program curriculum and social entrepreneurship and was on Zagat’s “30 Under 30” list in 2013. As Deputy Director, Leticia oversees the business incubator and funds development, manages staff development and is responsible for strategic projects including co-authoring the La Cocina Cookbook (to be published Spring 2019 by Chronicle Books.)',
+          'Leticia brings a passion for the kitchen to La Cocina and a true belief in the power of business ownership in transforming lives, particularly those of women and immigrants.',
+          'Favorite Foods: chilaquiles, quiche and the perfect brownie'
         ]
       },
       {
         name: 'Geetika Agrawal',
-        title: 'Senior Program Manager',
+        title: 'Program Director',
         phone: '(415) 824-2729 ext.305',
         email: 'email: geetika@lacocinasf.org',
         photo: 'Geetika.jpg',
@@ -141,7 +141,7 @@ module ApplicationHelper
       },
       {
         name: 'Jessica Mataka',
-        title: 'Development & Communications Associate',
+        title: 'Development and Communications Manager',
         phone: '415-824-2729 ext 307',
         email: 'jessica@lacocinasf.org',
         photo: 'jessica.jpg',

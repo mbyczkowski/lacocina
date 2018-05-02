@@ -30,6 +30,13 @@ businesses = [
     description: "Malaysian"
   },
   {
+    name: "Brown Butter Kitchen",
+    website_url: "",
+    offers_catering: false,
+    logo_url: "brown_butter_kitchen.png",
+    description: ""
+  },
+  {
     name: "Banquetes Adonai",
     website_url: "https://www.facebook.com/BanquetesadonaiSf/",
     offers_catering: false,
@@ -42,6 +49,13 @@ businesses = [
     offers_catering: true,
     logo_url: "binis_kitchen.png",
     description: "Nepalese Food from the Soul"
+  },
+  {
+    name: "Bovino",
+    website_url: "",
+    offers_catering: false,
+    logo_url: "bovino.png",
+    description: ""
   },
   {
     name: "Crumble & Whisk Pâtisserie",
@@ -63,6 +77,13 @@ businesses = [
     offers_catering: false,
     logo_url: "claire_squares.png",
     description: "Irish Shortbread Squares"
+  },
+  {
+    name: "Crisps & Crackles",
+    website_url: "",
+    offers_catering: false,
+    logo_url: "crips_and_crackles.png",
+    description: ""
   },
   {
     name: "D'Maize",
@@ -149,11 +170,32 @@ businesses = [
     description: "Kale Chips"
   },
   {
+    name: "Kathy's Gourmet Soul Food Kitchen",
+    website_url: "",
+    offers_catering: false,
+    logo_url: "kathys_gourmet_soul_food_kitchen.png",
+    description: ""
+  },
+  {
+    name: "Katleti",
+    website_url: "",
+    offers_catering: false,
+    logo_url: "katleti",
+    description: ""
+  },
+  {
     name: "Kika's Treats",
     website_url: "http://kikastreats.com/",
     offers_catering: false,
     logo_url: "kikas_treats.png",
     description: "Artisanal Chocolate Covered Treats"
+  },
+  {
+    name: "La Guerrera",
+    website_url: "",
+    offers_catering: false,
+    logo_url: "la_guerrera.png",
+    description: ""
   },
   {
     name: "La Luna Cupcakes",
@@ -261,6 +303,13 @@ businesses = [
     description: "Persian Kukus"
   },
   {
+    name: "Pass the Sauced",
+    website_url: "",
+    offers_catering: false,
+    logo_url: "pass_the_sauced.png",
+    description: ""
+  },
+  {
     name: "Peaches Patties",
     website_url: "http://www.peachespatties.com/",
     offers_catering: true,
@@ -275,9 +324,23 @@ businesses = [
     description: "Frozen Kids Food"
   },
   {
+    name: "Pinky & Red",
+    website_url: "",
+    offers_catering: false,
+    logo_url: "pinky_and_red.png",
+    description: ""
+  },
+  {
+    name: "Queen Pickle",
+    website_url: "",
+    offers_catering: false,
+    logo_url: "queen_pickle.png",
+    description: ""
+  },
+  {
     name: "Rasoi",
     website_url: "http://rasoikitchen.strikingly.com/",
-    offers_catering: true,
+    offers_catering: false,
     logo_url: "rasoi.png",
     description: "Gujurati Indian Food"
   },
@@ -326,16 +389,9 @@ businesses = [
   {
     name: "Sugarfoot Grits",
     website_url: "http://www.sugarfootkitchen.com/",
-    offers_catering: true,
+    offers_catering: false,
     logo_url: "sugarfoot_grits.png",
     description: "Southern Specialties"
-  },
-  {
-    name: "Super Sauces",
-    website_url: "",
-    offers_catering: false,
-    logo_url: "super_sauces.png",
-    description: "Healthy Sauces made mostly of avocado"
   },
   {
     name: "Sweets Collection",
@@ -350,6 +406,20 @@ businesses = [
     offers_catering: false,
     logo_url: "teranga.png",
     description: "Senegalese Baobab Juices"
+  },
+  {
+    name: "The Healing Kitchen",
+    website_url: "",
+    offers_catering: false,
+    logo_url: "healing_kitchen.png",
+    description: ""
+  },
+  {
+    name: "The Uncreamery",
+    website_url: "",
+    offers_catering: false,
+    logo_url: "uncreamery.png",
+    description: ""
   },
   {
     name: "Zella's Soulful Kitchen",
