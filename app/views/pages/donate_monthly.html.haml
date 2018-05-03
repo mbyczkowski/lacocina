@@ -1,36 +1,3 @@
-:scss
-  .embed-container {
-    position: relative;
-    overflow: hidden;
-    max-width: 100%;
-    height: 407px;
-  }
-  .embed-container iframe, .embed-container object, .embed-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .loadImg {
-    position: relative;
-    top: 60%;
-    margin: 0 auto;
-    width: 30%;
-    z-index: 999;
-    div {
-      display: table-cell;
-      width: 200px;
-      height: 200px;
-      text-align: center;
-      vertical-align: middle;
-    }
-  }
-:javascript
-  function load(){
-    $('.loadImg').css('display','none')
-  }
-
 .donate-page.monthly
   .hero
     .image-callout
@@ -115,11 +82,9 @@
             (at your home or in La Cocina's kitchen!).
 
   .row
-    .large-4.large-offset-4.columns.text-center
-      .embed-container
-        .loadImg
-          = image_tag 'loading.svg'
-        %iframe{src: "https://connect.clickandpledge.com/w/Organization/lacocinasf/paymentwidget/b58b99c2-f73d-4ca0-a69a-8270acfb87e3", frameborder: "0", allowfullscreen: true, name: "iframe",onload: "load()"}
+    .row.text-center
+      = link_to "CLICK HERE TO DONATE MONTHLY", "https://connect.clickandpledge.com/w/Form/42099810-74da-44b4-90ac-432aa83f7eba", { class: 'button large hollow' }
+
   .testimonial
     = image_tag "donate_monthly/testimonial.jpg"
     .text
