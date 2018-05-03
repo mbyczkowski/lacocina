@@ -33,7 +33,7 @@ businesses = [
     name: "Brown Butter Kitchen",
     website_url: "",
     offers_catering: false,
-    logo_url: "brown_butter_kitchen.png",
+    #logo_url: "brown_butter_kitchen.png",
     description: ""
   },
   {
@@ -82,7 +82,7 @@ businesses = [
     name: "Crisps & Crackles",
     website_url: "",
     offers_catering: false,
-    logo_url: "crips_and_crackles.png",
+    #logo_url: "crips_and_crackles.png",
     description: ""
   },
   {
@@ -173,14 +173,14 @@ businesses = [
     name: "Kathy's Gourmet Soul Food Kitchen",
     website_url: "",
     offers_catering: false,
-    logo_url: "kathys_gourmet_soul_food_kitchen.png",
+    #logo_url: "kathys_gourmet_soul_food_kitchen.png",
     description: ""
   },
   {
     name: "Katleti",
     website_url: "",
     offers_catering: false,
-    logo_url: "katleti",
+    #logo_url: "katleti.png",
     description: ""
   },
   {
@@ -194,7 +194,7 @@ businesses = [
     name: "La Guerrera",
     website_url: "",
     offers_catering: false,
-    logo_url: "la_guerrera.png",
+    #logo_url: "la_guerrera.png",
     description: ""
   },
   {
@@ -306,7 +306,7 @@ businesses = [
     name: "Pass the Sauced",
     website_url: "",
     offers_catering: false,
-    logo_url: "pass_the_sauced.png",
+    #logo_url: "pass_the_sauced.png",
     description: ""
   },
   {
@@ -327,14 +327,14 @@ businesses = [
     name: "Pinky & Red",
     website_url: "",
     offers_catering: false,
-    logo_url: "pinky_and_red.png",
+    #logo_url: "pinky_and_red.png",
     description: ""
   },
   {
     name: "Queen Pickle",
     website_url: "",
     offers_catering: false,
-    logo_url: "queen_pickle.png",
+    #logo_url: "queen_pickle.png",
     description: ""
   },
   {
@@ -411,14 +411,14 @@ businesses = [
     name: "The Healing Kitchen",
     website_url: "",
     offers_catering: false,
-    logo_url: "healing_kitchen.png",
+    #logo_url: "healing_kitchen.png",
     description: ""
   },
   {
     name: "The Uncreamery",
     website_url: "",
     offers_catering: false,
-    logo_url: "uncreamery.png",
+    #logo_url: "uncreamery.png",
     description: ""
   },
   {
